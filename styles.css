@@ -63,17 +63,14 @@ html {
 
 /* HEADER */
 .header {
-	
-}
-
-/* NAVIGATION */
-.nav {
-	display: flex;
-	flex-direction: row-reverse;
-	padding:  20px;
+		display: flex;
+		flex-direction: row-reverse;
+		padding: 20px;
 }
 
 .logo {
 	position: absolute;
+	top: 0px;
+	left: 0px;
 }
 
