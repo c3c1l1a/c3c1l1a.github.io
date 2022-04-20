@@ -60,3 +60,12 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+
+/* NAVIGATION */
+.nav {
+	display: flex;
+	flex-direction: row-reverse;
+	padding:  20px;
+}
+
