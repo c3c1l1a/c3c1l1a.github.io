@@ -74,3 +74,31 @@ html {
 	left: 0px;
 }
 
+/* MAIN */
+.main {
+	padding: 20px;
+}
+
+/* CTA */
+.CTA {
+	display: flex;
+	flex-direction: column;
+}
+
+.name {
+	font-size: 80px;
+}
+
+.intro {
+	padding: 20px 0;
+}
+.description {
+	padding-top: 10px;	
+}
+
+.CTA-button {
+	padding:  10px;
+	background: #1A2236;
+	color: white;
+	font: 20px bold sans-serif;
+}
