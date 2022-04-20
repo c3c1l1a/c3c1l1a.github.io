@@ -61,6 +61,10 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+	--dark-blue: #1A2236;
+}
+
 /* HEADER */
 .header {
 		display: flex;
@@ -86,19 +90,26 @@ html {
 }
 
 .name {
-	font-size: 80px;
+	font: 50px "Playfair Display", serif;
+	color: var(--dark-blue);
+	line-height: 100%;
 }
 
 .intro {
-	padding: 20px 0;
+	padding: 30px 0;
+
 }
 .description {
 	padding-top: 10px;	
+	font: 14px "Poppins", serif;
+	color: var(--dark-blue);
 }
 
 .CTA-button {
+	height: 50px;
 	padding:  10px;
-	background: #1A2236;
+	background: var(--dark-blue);
 	color: white;
-	font: 20px bold sans-serif;
+	font: 14px "Poppins", serif;
+	border: none;
 }
