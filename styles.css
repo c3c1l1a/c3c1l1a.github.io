@@ -5,62 +5,61 @@ html {
   box-sizing: border-box;
 }
 
-*, 
+*,
 *::before,
 *::after {
   box-sizing: inherit;
 }
 
-
 :root {
-	--dark-blue: #1A2236;
+  --dark-blue: #1A2236;
 }
 
 /* HEADER */
 .header {
-		display: flex;
-		flex-direction: row-reverse;
-		padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 20px;
 }
 
 .logo {
-	position: absolute;
-	top: 0px;
-	left: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 /* MAIN */
 .main {
-	padding: 20px;
+  padding: 20px;
 }
 
 /* CTA */
 .CTA {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .name {
-	font: 50px "Playfair Display", serif;
-	color: var(--dark-blue);
-	line-height: 100%;
+  font: 50px "Playfair Display", serif;
+  color: var(--dark-blue);
+  line-height: 100%;
 }
 
 .intro {
-	padding: 30px 0;
-
+  padding: 30px 0;
 }
+
 .description {
-	padding-top: 10px;	
-	font: 14px "Poppins", serif;
-	color: var(--dark-blue);
+  padding-top: 10px;	
+  font: 14px "Poppins", serif;
+  color: var(--dark-blue);
 }
 
 .CTA-button {
-	height: 50px;
-	padding:  10px;
-	background: var(--dark-blue);
-	color: white;
-	font: 14px "Poppins", serif;
-	border: none;
+  height: 50px;
+  padding:  10px;
+  background: var(--dark-blue);
+  color: white;
+  font: 14px "Poppins", serif;
+  border: none;
 }
