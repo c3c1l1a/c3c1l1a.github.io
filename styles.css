@@ -82,10 +82,6 @@ html {
   background: darkturquoise;
 }
 
-.project-card {
-  padding: 20px;
-}
-
 .projects-header {
   padding: 20px;
   font: var(--text-size-h1) "Playfair Display", serif;
@@ -97,10 +93,12 @@ html {
 
 .project-name {
   margin-right: 10px 0;
+  padding: 0 20px;
   font: var(--text-size-h4) "Poppins", serif;
 }
 
 .project-tech-stack-tags {
+  padding: 0 20px;
   margin: 10px 0;
 }
 .project-tech-stack-tags > * {
