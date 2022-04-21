@@ -83,3 +83,7 @@ html {
   padding: 20px;
   font: var(--text-size-h1) "Playfair Display", serif;
 }
+
+.project-image {
+  min-width: 100%;
+}
