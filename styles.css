@@ -79,21 +79,21 @@ html {
 }
 
 
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--dark-blue);
+  padding-bottom: 10px;
+}
+
 .projects-header {
   padding: 20px;
   font: var(--text-size-h1) "Playfair Display", serif;
 }
-.project-card {
-  display: flex;
-  flex-direction: column;
-  background: darkturquoise;
-}
-
-.project-image {
-  
-}
 
 .project-name {
+  color: white;
   margin: 10px 20px;
   font: var(--text-size-h4) "Poppins", serif;
 }
@@ -106,6 +106,7 @@ html {
   line-height: 20px;
   padding:  5px 20px;
   margin-right: 10px;
+  color: var(--dark-blue);
   font: var(--text-size-span) "Poppins", serif;
   background: var(--color-project-tech-stack-tag);
 }
@@ -121,5 +122,6 @@ html {
 }
 
 .project-details-link span {
+  margin: 0 5px;
   font: var(--text-size-button) "Poppins", serif;
 }
