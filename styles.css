@@ -16,6 +16,7 @@ html {
   --text-size-p: 14px;
   --text-size-button: 16px;
   --text-size-h1: 50px;
+  --text-size-h4: 20px;
 }
 
 /* HEADER */
@@ -79,6 +80,10 @@ html {
   background: darkturquoise;
 }
 
+.project-card {
+  padding: 20px;
+}
+
 .projects-header {
   padding: 20px;
   font: var(--text-size-h1) "Playfair Display", serif;
@@ -86,4 +91,8 @@ html {
 
 .project-image {
   min-width: 100%;
+}
+
+.project-name {
+  font: var(--text-size-h4) "Poppins", serif;
 }
