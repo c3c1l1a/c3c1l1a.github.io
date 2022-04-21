@@ -13,6 +13,8 @@ html {
 
 :root {
   --dark-blue: #1a2236;
+  --text-size-p: 14px;
+  --text-size-button: 16px;
 }
 
 /* HEADER */
@@ -58,7 +60,7 @@ html {
 
 .description {
   padding-top: 10px;
-  font: 14px "Poppins", serif;
+  font: var(--text-size-p) "Poppins", serif;
   color: var(--dark-blue);
 }
 
@@ -67,6 +69,6 @@ html {
   padding: 10px;
   background: var(--dark-blue);
   color: white;
-  font: 14px "Poppins", serif;
+  font: var(--text-size-button) "Poppins", serif;
   border: none;
 }
