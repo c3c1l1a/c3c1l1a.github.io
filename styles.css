@@ -17,6 +17,8 @@ html {
   --text-size-button: 16px;
   --text-size-h1: 50px;
   --text-size-h4: 20px;
+  --text-size-span: 10.33px;
+  --color-project-tech-stack-tag: #98DEDE;
 }
 
 /* HEADER */
@@ -94,5 +96,18 @@ html {
 }
 
 .project-name {
+  margin-right: 10px 0;
   font: var(--text-size-h4) "Poppins", serif;
+}
+
+.project-tech-stack-tags {
+  margin: 10px 0;
+}
+.project-tech-stack-tags > * {
+  height: 20px; /*Equal height and line-height for centering text*/
+  line-height: 20px;
+  padding:  5px 20px;
+  margin-right: 10px;
+  font: var(--text-size-span) "Poppins", serif;
+  background: var(--color-project-tech-stack-tag);
 }
