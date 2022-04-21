@@ -28,7 +28,6 @@ html {
 .nav {
   display: flex;
   justify-content: flex-end;
-  border: solid 1px honeydew;
 }
 
 .logo {
