@@ -1,3 +1,5 @@
 ---
 linters:
     csslint:
+fixers:
+    enable: true
