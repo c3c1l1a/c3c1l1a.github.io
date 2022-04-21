@@ -1,5 +1,5 @@
 ---
 linters:
-    csslint:
+    /*csslint:*/
 fixers:
     enable: true
