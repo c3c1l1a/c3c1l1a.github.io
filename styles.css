@@ -69,7 +69,7 @@ html {
   color: var(--dark-blue);
 }
 
-.CTA-button {
+.button {
   height: 50px;
   padding: 10px;
   background: var(--dark-blue);
