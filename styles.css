@@ -111,10 +111,13 @@ html {
 }
 
 .project-details-link {
+  display: flex;
+  align-items: center;
   width: fit-content;
   margin: 10px 20px;
+  padding: 0 20px;
   text-decoration: none;
-  border: solid 3px white;
+  border: solid 2px white;
 }
 
 .project-details-link span {
