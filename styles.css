@@ -1,0 +1,73 @@
+/*
+	BORDER BOX RESET
+*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --dark-blue: #1a2236;
+  --text-size-p: 14px;
+  --text-size-button: 16px;
+}
+
+/* HEADER */
+.header {
+  flex-direction: row-reverse;
+  padding: 20px;
+  background: no-repeat url("images/decorative_bg_1.png");
+  background-size: contain;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* MAIN */
+.main {
+  padding: 20px;
+}
+
+/* CTA */
+.CTA {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font: 50px "Playfair Display", serif;
+  color: var(--dark-blue);
+  line-height: 100%;
+}
+
+.intro {
+  padding: 30px 0;
+}
+
+.description {
+  padding-top: 10px;
+  font: var(--text-size-p) "Poppins", serif;
+  color: var(--dark-blue);
+}
+
+.CTA-button {
+  height: 50px;
+  padding: 10px;
+  background: var(--dark-blue);
+  color: white;
+  font: var(--text-size-button) "Poppins", serif;
+  border: none;
+}
