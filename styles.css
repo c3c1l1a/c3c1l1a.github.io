@@ -111,5 +111,10 @@ html {
 }
 
 .project-details-link {
-  
+  text-decoration: none;
+  border: solid 3px white;
+}
+
+.project-details-link span {
+  font: var(--text-size-button) "Poppins", serif;
 }
