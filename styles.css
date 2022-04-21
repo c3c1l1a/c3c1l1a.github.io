@@ -78,28 +78,28 @@ html {
   border: none;
 }
 
-.projects {
-  background: darkturquoise;
-}
 
 .projects-header {
   padding: 20px;
   font: var(--text-size-h1) "Playfair Display", serif;
 }
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: darkturquoise;
+}
 
 .project-image {
-  min-width: 100%;
+  
 }
 
 .project-name {
-  margin-right: 10px 0;
-  padding: 0 20px;
+  margin: 10px 20px;
   font: var(--text-size-h4) "Poppins", serif;
 }
 
 .project-tech-stack-tags {
-  padding: 0 20px;
-  margin: 10px 0;
+  margin: 10px 20px;
 }
 .project-tech-stack-tags > * {
   height: 20px; /*Equal height and line-height for centering text*/
@@ -111,6 +111,8 @@ html {
 }
 
 .project-details-link {
+  width: fit-content;
+  margin: 10px 20px;
   text-decoration: none;
   border: solid 3px white;
 }
