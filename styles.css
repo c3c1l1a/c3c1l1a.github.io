@@ -38,13 +38,15 @@ html {
 
 /* MAIN */
 .main {
-  padding: 20px;
+  
 }
 
 /* CTA */
 .CTA {
   display: flex;
   flex-direction: column;
+  padding: 20px;
+  background: bisque;
 }
 
 .name {
@@ -70,4 +72,12 @@ html {
   color: white;
   font: var(--text-size-button) "Poppins", serif;
   border: none;
+}
+
+.projects {
+  background: darkturquoise;
+}
+
+.projects-header {
+  
 }
