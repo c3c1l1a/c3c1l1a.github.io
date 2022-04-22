@@ -47,10 +47,6 @@ html {
   flex-direction: column;
 }
 
-.CTA-container {
-  padding: 30px 20px;
-}
-
 .CTA-container > .CTA-my-name {
   padding: 20px 0;
 }
