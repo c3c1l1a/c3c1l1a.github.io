@@ -18,7 +18,7 @@ html {
   --text-size-h1: 50px;
   --text-size-h4: 20px;
   --text-size-span: 10.33px;
-  --color-project-tech-stack-tag: #98DEDE;
+  --color-project-tech-stack-tag: #98dede;
 }
 
 /* HEADER */
@@ -40,16 +40,14 @@ html {
   left: 0;
 }
 
-
 /* CTA */
 .CTA {
   display: flex;
   flex-direction: column;
 }
 
-
 .CTA-decorative-img {
-  width: 100% ;
+  width: 100%;
 }
 
 .projects {
@@ -81,6 +79,7 @@ html {
   display: flex;
   align-items: center;
 }
+
 .project-tech-stack-tags > * {
   display: inline-block;
   padding: 5px 10px;
