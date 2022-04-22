@@ -47,9 +47,6 @@ html {
   flex-direction: column;
 }
 
-.CTA-container > .CTA-my-name {
-  padding: 20px 0;
-}
 
 .CTA-decorative-img {
   width: 100% ;
@@ -58,6 +55,9 @@ html {
 .projects {
   display: grid;
   grid-template-columns: 1fr;
+}
+.projects-header {
+  margin: 20px;
 }
 
 .project-card {
