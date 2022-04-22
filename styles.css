@@ -128,4 +128,26 @@ html {
   text-decoration: none;
 }
 
+.tech-stack {
+  background-color: #1C528A;
+}
 
+.tech-stack-category {
+  font: var(--text-size-h4) "Poppins", serif;
+  font-weight: bolder;
+  color: white;
+}
+
+.tech-stack-list  {
+  list-style: none;
+  font: 18px "Poppins", serif;
+  font-weight: bold;
+  color: white;
+}
+
+.tech-stack-list li::before {
+  display: inline-block;
+  width: 1em;
+  content: "\2022"; 
+  color: white;
+}
