@@ -63,20 +63,23 @@ html {
 .project-card {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   background: var(--dark-blue);
   padding-bottom: 10px;
 }
 
+.card-details {
+  margin: 0 20px;
+}
+
 .project-name {
   color: white;
-  margin: 10px 20px;
   font: var(--text-size-h4) "Poppins", serif;
 }
 
 .project-tech-stack-tags {
   display: flex;
   align-items: center;
-  margin: 10px 20px;
 }
 .project-tech-stack-tags > * {
   display: inline-block;
