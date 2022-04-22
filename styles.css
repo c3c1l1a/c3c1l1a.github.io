@@ -106,12 +106,13 @@ html {
 }
 
 .project-tech-stack-tags {
+  display: flex;
+  align-items: center;
   margin: 10px 20px;
 }
 .project-tech-stack-tags > * {
-  height: 20px; /*Equal height and line-height for centering text*/
-  line-height: 20px;
-  padding:  5px 20px;
+  display: inline-block;
+  padding: 5px 10px;
   margin-right: 10px;
   color: var(--dark-blue);
   font: var(--text-size-span) "Poppins", serif;
