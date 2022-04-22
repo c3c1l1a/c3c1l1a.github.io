@@ -55,26 +55,10 @@ html {
   padding: 20px 0;
 }
 
-.CTA-button {
-  display: inline-block;
-  margin: 20px 0;
-  width: 100%;
-  text-decoration: none;
-  text-align:  center;
-}
-
 .CTA-decorative-img {
   width: 100% ;
 }
 
-.button {
-  height: 50px;
-  padding: 10px;
-  background: var(--dark-blue);
-  color: white;
-  font: var(--text-size-button) "Poppins", serif;
-  border: none;
-}
 
 .projects {
   display: grid;
@@ -139,5 +123,17 @@ html {
   color: var(--dark-blue);
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 50px;
+  padding: 10px 20px;
+  background: var(--dark-blue);
+  color: white;
+  font: var(--text-size-button) "Poppins", serif;
+  text-decoration: none;
+}
 
 
