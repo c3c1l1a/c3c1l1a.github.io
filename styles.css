@@ -129,7 +129,13 @@ html {
 }
 
 .tech-stack {
-  background-color: #1C528A;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px;
+  padding: 50px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .tech-stack-category {
@@ -150,4 +156,10 @@ html {
   width: 1em;
   content: "\2022"; 
   color: white;
+}
+
+.languages {
+  background-color: #1C528A;
+  background-image: url("images/ic_languages.png");
+
 }
