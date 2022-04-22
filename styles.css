@@ -54,6 +54,7 @@ html {
   display: grid;
   grid-template-columns: 1fr;
 }
+
 .projects-header {
   margin: 20px;
 }
@@ -143,7 +144,7 @@ html {
   color: white;
 }
 
-.tech-stack-list  {
+.tech-stack-list {
   list-style: none;
   font: 18px "Poppins", serif;
   font-weight: bold;
@@ -153,21 +154,21 @@ html {
 .tech-stack-list li::before {
   display: inline-block;
   width: 1em;
-  content: "\2022"; 
+  content: "\2022";
   color: white;
 }
 
 .languages {
-  background-color: #1C528A;
+  background-color: #1c528a;
   background-image: url("images/ic_languages.png");
 }
 
 .frameworks {
-  background-color: #E2505C;
+  background-color: #e2505c;
   background-image: url("images/ic_frameworks.png");
 }
 
 .skills {
-  background-color: #FEBF52;
+  background-color: #febf52;
   background-image: url("images/ic_skills.png");
 }
