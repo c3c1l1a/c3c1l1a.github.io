@@ -161,5 +161,14 @@ html {
 .languages {
   background-color: #1C528A;
   background-image: url("images/ic_languages.png");
+}
 
+.frameworks {
+  background-color: #E2505C;
+  background-image: url("images/ic_frameworks.png");
+}
+
+.skills {
+  background-color: #FEBF52;
+  background-image: url("images/ic_skills.png");
 }
