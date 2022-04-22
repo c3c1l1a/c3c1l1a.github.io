@@ -45,32 +45,35 @@ html {
 .CTA {
   display: flex;
   flex-direction: column;
-  padding: 20px;
 }
 
 .CTA-container {
-  padding: 30px 0;
+  padding: 30px 20px;
 }
 
 .CTA-my-name {
+  padding: 20px 0;
   font: var(--text-size-h1) "Playfair Display", serif;
   color: var(--dark-blue);
   line-height: 100%;
 }
 
 .CTA-self-intro {
-  padding-top: 10px;
+  padding: 20px 0;
   font: var(--text-size-p) "Poppins", serif;
   color: var(--dark-blue);
-  padding: 30px 0;
 }
 
 .CTA-button {
   display: inline-block;
-  width:  100%;
+  margin: 20px 0;
+  width: 100%;
   text-decoration: none;
   text-align:  center;
-  margin: 10px 0;
+}
+
+.CTA-decorative-img {
+  width: 100% ;
 }
 
 .button {
