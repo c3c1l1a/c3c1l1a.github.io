@@ -51,11 +51,8 @@ html {
   padding: 30px 20px;
 }
 
-.CTA-my-name {
+.CTA-container > .CTA-my-name {
   padding: 20px 0;
-  font: var(--text-size-h1) "Playfair Display", serif;
-  color: var(--dark-blue);
-  line-height: 100%;
 }
 
 .CTA-self-intro {
@@ -88,11 +85,6 @@ html {
 .projects {
   display: grid;
   grid-template-columns: 1fr;
-}
-
-.projects-header {
-  padding: 20px;
-  font: var(--text-size-h1) "Playfair Display", serif;
 }
 
 .project-card {
@@ -135,4 +127,12 @@ html {
 .project-details-link span {
   margin: 0 5px;
   font: var(--text-size-button) "Poppins", serif;
+}
+
+
+.section-header {
+  padding: 20px;
+  font: var(--text-size-h1) "Playfair Display", serif;
+  color: var(--dark-blue);
+  line-height: 100%;
 }
