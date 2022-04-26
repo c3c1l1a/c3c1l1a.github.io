@@ -202,18 +202,12 @@ html {
   color: #7d7c84;
 }
 
-.input-field
-.input-field-style {
+.input-field .input-field-style {
   display: block;
   width: 100%;
   border: none;
   background: transparent;
   font: var(--text-size-p) "Poppins", serif;
-}
-
-.input-field.input-field-style:focus,
-.text-area:focus {
-  outline: none;
 }
 
 .text-area {
@@ -223,8 +217,10 @@ html {
   background: #ffffff;
 }
 
-
-
+.input-field.input-field-style:focus,
+.text-area:focus {
+  outline: none;
+}
 
 .form-button {
   border: none;
