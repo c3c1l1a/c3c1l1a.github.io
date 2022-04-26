@@ -172,3 +172,42 @@ html {
   background-color: #febf52;
   background-image: url("images/ic_skills.png");
 }
+
+
+.form-section {
+  padding:  20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-formset {
+  border:  solid 2px #dfdfe0;
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.name-formset 
+label {
+  display: block;
+  font: 10 "Poppins", serif;
+  color: #7d7c84;
+}
+
+.name-formset 
+#name {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+.name-formset 
+#name:focus {
+  border: none;
+}
+
+
+
