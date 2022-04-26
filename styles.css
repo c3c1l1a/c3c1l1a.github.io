@@ -202,7 +202,7 @@ html {
   color: #7d7c84;
 }
 
-.input-field .input-field-style {
+.input-field.input-field-style {
   display: block;
   width: 100%;
   border: none;
@@ -211,10 +211,10 @@ html {
 }
 
 .text-area {
-  min-height: 112px ;
+  min-height: 112px;
   background: transparent;
   font: 14px "Poppins", serif;
-  background: #ffffff;
+  background: #fff;
 }
 
 .input-field.input-field-style:focus,
