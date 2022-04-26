@@ -173,7 +173,6 @@ html {
   background-image: url("images/ic_skills.png");
 }
 
-
 .form-section {
   display: flex;
   flex-direction: column;
@@ -187,14 +186,14 @@ html {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap:  10px;
+  gap: 10px;
 }
 
 .input-field {
-  border:  solid 2px #dfdfe0;
+  border: solid 2px #dfdfe0;
   border-radius: 4px;
   padding: 10px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .input-field
@@ -211,11 +210,9 @@ label {
   border: none;
   background: transparent;
   font: var(--text-size-p) "Poppins", serif;
-
 }
 
-.input-field
-.input-field-style:focus,
+.input-field.input-field-style:focus,
 .text-area:focus {
   outline: none;
 }
