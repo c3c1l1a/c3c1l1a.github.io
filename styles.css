@@ -196,8 +196,7 @@ html {
   background: #fff;
 }
 
-.input-field
-label {
+.input-field label {
   display: block;
   font: 10px "Poppins", serif;
   color: #7d7c84;
