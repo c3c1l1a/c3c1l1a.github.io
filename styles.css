@@ -210,8 +210,11 @@ label {
 }
 
 .text-area {
-  min-height: 112px;
+  min-height: 112px ;
   color: #7d7c84;
   font: 14px "Poppins", serif;
 }
 
+.form-button {
+  border: none;
+}
