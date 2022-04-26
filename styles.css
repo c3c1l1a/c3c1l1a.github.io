@@ -175,7 +175,13 @@ html {
 
 
 .form-section {
-  padding:  20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 100px 20px 20px 20px;
+  background-color: #f9f9fa;
+  background-image: url("images/decorative_bg_1.png");
+  background-repeat: no-repeat;
 }
 
 .contact-form {
@@ -188,6 +194,7 @@ html {
   border:  solid 2px #dfdfe0;
   border-radius: 4px;
   padding: 10px;
+  background: #ffffff;
 }
 
 .input-field
@@ -202,24 +209,25 @@ label {
   display: block;
   width: 100%;
   border: none;
+  background: transparent;
   font: var(--text-size-p) "Poppins", serif;
+
 }
 
 .input-field
 .input-field-style:focus,
 .text-area:focus {
   outline: none;
-  background: transparent;
 }
 
 .text-area {
   min-height: 112px ;
+  background: transparent;
   font: 14px "Poppins", serif;
+  background: #ffffff;
 }
 
-.text-area:focus {
-  color: #7d7c84;
-}
+
 
 
 .form-button {
