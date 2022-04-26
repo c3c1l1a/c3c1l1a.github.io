@@ -161,12 +161,15 @@
     <!-- Form section-->
     <section class="form-section">
       <form class="contact-form">
-        <fieldset class="name-formset">
+        <fieldset class="name-formset input-field">
           <label>Your name</label>
-          <input id="name" type="text" name="name">
+          <input class="input-field-style" type="text" name="name">
         </fieldset>
-        <input type="email" name="email" placeholder="Your email">
-        <textarea name="message">Enter your message here</textarea>
+        <fieldset class="email-formset input-field">
+          <label>Your email</label>
+          <input class="input-field-style" type="email" name="email" >
+        </fieldset>
+        <textarea class="text-area input-field" name="message">Enter your message here</textarea>
         <button>Start Collaboration</button>
       </form>
     </section>

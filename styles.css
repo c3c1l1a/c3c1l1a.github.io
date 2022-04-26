@@ -183,31 +183,35 @@ html {
   flex-direction: column;
 }
 
-.name-formset {
+.input-field {
   border:  solid 2px #dfdfe0;
   border-radius: 4px;
   margin: 10px 0;
   padding: 10px;
 }
 
-.name-formset 
+.input-field
 label {
   display: block;
-  font: 10 "Poppins", serif;
+  font: 10px "Poppins", serif;
   color: #7d7c84;
 }
 
-.name-formset 
-#name {
+.input-field
+.input-field-style {
   display: block;
   width: 100%;
   border: none;
 }
 
-.name-formset 
+.input-field
 #name:focus {
   border: none;
 }
 
-
+.text-area {
+  min-height: 112px;
+  color: #7d7c84;
+  font: 14px "Poppins", serif;
+}
 
