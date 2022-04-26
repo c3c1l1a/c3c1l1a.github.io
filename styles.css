@@ -202,18 +202,25 @@ label {
   display: block;
   width: 100%;
   border: none;
+  font: var(--text-size-p) "Poppins", serif;
 }
 
 .input-field
-#name:focus {
-  border: none;
+.input-field-style:focus,
+.text-area:focus {
+  outline: none;
+  background: transparent;
 }
 
 .text-area {
   min-height: 112px ;
-  color: #7d7c84;
   font: 14px "Poppins", serif;
 }
+
+.text-area:focus {
+  color: #7d7c84;
+}
+
 
 .form-button {
   border: none;
