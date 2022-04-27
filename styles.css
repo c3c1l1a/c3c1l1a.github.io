@@ -25,9 +25,7 @@ html {
 
 
 
-.projects-header {
-  margin: 20px;
-}
+
 
 .project-card {
   display: flex;
@@ -245,6 +243,10 @@ html {
   .projects {
     grid-template-columns: 1fr;
   }
+
+  .projects-header {
+    margin: 20px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -316,7 +318,7 @@ html {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 200px 10%;
+    padding: 160px;
     background: no-repeat url("images/image_dots.png");
     background-position: bottom right;
   }
@@ -332,5 +334,14 @@ html {
   /* Desktop projects */
   .projects {
     grid-template-columns: 1fr 2fr;
+    background: red;
+  }
+
+  .projects-header {
+    background: navajowhite;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: right;
+    padding-right: 120px;
   }
 }
