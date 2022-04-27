@@ -189,38 +189,44 @@ html {
   gap: 10px;
 }
 
-.input-field {
-  border: solid 2px #dfdfe0;
-  border-radius: 4px;
-  padding: 10px;
-  background: #fff;
-}
-
-.input-field label {
-  display: block;
-  font: 10px "Poppins", serif;
-  color: #7d7c84;
-}
-
-.input-field.input-field-style {
+.form-field {
   display: block;
   width: 100%;
-  border: none;
-  background: transparent;
+  background: #fff;
   font: var(--text-size-p) "Poppins", serif;
 }
 
-.text-area {
-  min-height: 112px;
-  background: transparent;
-  font: 14px "Poppins", serif;
+.contact-form label {
+  padding: 10px;
+  border: solid 2px #dfdfe0;
+  background-color: #fff;
+  color: #7d7c84;
+  font: 10px "Poppins", serif;
+  border-radius: 4px;
 }
 
-.input-field.input-field-style:focus,
-.text-area:focus {
+.contact-form input {
+  border: none; 
+}
+
+.contact-form input::placeholder {
+  color: transparent;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  border: solid 2px #dfdfe0;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus
+{
   outline: none;
 }
 
-.form-button {
+.contact-form button {
   border: none;
 }
+
