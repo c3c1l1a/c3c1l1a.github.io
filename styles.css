@@ -76,16 +76,6 @@ html {
   font: var(--text-size-button) "Poppins", serif;
 }
 
-.article-container {
-  padding: 20px;
-}
-
-.section-header {
-  font: var(--text-size-h1) "Playfair Display", serif;
-  color: var(--dark-blue);
-  line-height: 100%;
-}
-
 .article-summery {
   padding: 20px 0;
   font: var(--text-size-p) "Poppins", serif;
@@ -218,6 +208,12 @@ html {
   }
 
   /* Mobile Generic section styles */
+  .section-header {
+    font: var(--text-size-h1) "Playfair Display", serif;
+    color: var(--dark-blue);
+    line-height: 100%;
+  }
+
   .section-button {
     display: flex;
     align-items: center;
@@ -234,6 +230,11 @@ html {
   /* Mobile CTA */
   .CTA {
     flex-direction: column;
+    gap: 20px;
+  }
+
+  .CTA-container {
+    padding: 20px;
   }
 
   .CTA-decorative-img {
@@ -250,6 +251,7 @@ html {
   /* Desktop navbar */
   .nav {
     padding: 30px;
+    border-bottom: solid 2px #dddfe6;
   }
 
   .nav-items {
@@ -281,6 +283,7 @@ html {
   .nav-icon {
     display: none;
   }
+
   /* Generic section styles  */
   .section-header {
     font: 110px "Playfair Display", serif;
