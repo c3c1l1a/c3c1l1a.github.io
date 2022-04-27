@@ -206,7 +206,7 @@ html {
 }
 
 .contact-form input {
-  border: none; 
+  border: none;
 }
 
 .contact-form input::placeholder {
@@ -221,8 +221,7 @@ html {
 }
 
 .contact-form input:focus,
-.contact-form textarea:focus
-{
+.contact-form textarea:focus {
   outline: none;
 }
 
