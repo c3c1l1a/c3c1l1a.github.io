@@ -80,7 +80,7 @@ html {
   padding: 20px;
 }
 
-.article-header {
+.section-header {
   font: var(--text-size-h1) "Playfair Display", serif;
   color: var(--dark-blue);
   line-height: 100%;
@@ -242,6 +242,8 @@ html {
 }
 
 @media (min-width: 768px) {
+
+
   /* Desktop navbar */
   .nav {
     padding: 30px;
@@ -278,16 +280,28 @@ html {
   }
 
   /* Desktop CTA  */
+  .CTA {
+    justify-content: space-between;
+  }
+
   .CTA-container {
-    padding: 160px;
-    background-color: navajowhite;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 200px 10%;
+    background: navajowhite;
+ 
+  }
+  .section-header {
+    font: 110px "Playfair Display", serif;
+    color: var(--dark-blue);
+    line-height: 100%;
   }
 
   .CTA-decorative-img {
-    width: 700px;
-    height: 800px;
     background: url("images/decorative_bg_3.png");
     background-size: contain;
-    background-position: right;
+    background-color: blanchedalmond;
   }
+
 }
