@@ -229,6 +229,10 @@ html {
   }
 
   /* Mobile CTA */
+  .CTA {
+    flex-direction: column;
+  }
+
   .CTA-decorative-img {
     width: 100%;
     height: 200px;
@@ -273,4 +277,13 @@ html {
     display: none;
   }
 
+  /* Desktop CTA  */
+
+  .CTA-decorative-img {
+    height: 800px;
+    background: no-repeat url("images/decorative_bg_3.png");
+    background-size: contain;
+    background-position: right;
+    background-color: cornsilk;
+  }
 }
