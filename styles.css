@@ -172,3 +172,59 @@ html {
   background-color: #febf52;
   background-image: url("images/ic_skills.png");
 }
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 100px 20px 20px 20px;
+  background-color: #f9f9fa;
+  background-image: url("images/decorative_bg_1.png");
+  background-repeat: no-repeat;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+  background: #fff;
+  font: var(--text-size-p) "Poppins", serif;
+}
+
+.contact-form label {
+  padding: 10px;
+  border: solid 2px #dfdfe0;
+  background-color: #fff;
+  color: #7d7c84;
+  font: 10px "Poppins", serif;
+  border-radius: 4px;
+}
+
+.contact-form input {
+  border: none;
+}
+
+.contact-form input::placeholder {
+  color: transparent;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  border: solid 2px #dfdfe0;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+}
+
+.contact-form button {
+  border: none;
+}
