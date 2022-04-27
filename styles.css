@@ -278,12 +278,16 @@ html {
   }
 
   /* Desktop CTA  */
+  .CTA-container {
+    padding: 160px;
+    background-color: navajowhite;
+  }
 
   .CTA-decorative-img {
+    width: 700px;
     height: 800px;
-    background: no-repeat url("images/decorative_bg_3.png");
+    background: url("images/decorative_bg_3.png");
     background-size: contain;
     background-position: right;
-    background-color: cornsilk;
   }
 }
