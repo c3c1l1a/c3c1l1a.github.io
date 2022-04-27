@@ -15,24 +15,13 @@ html {
   --dark-blue: #1a2236;
   --text-size-p: 14px;
   --text-size-button: 16px;
+  --text-size-button-link: 16px;
   --text-size-h1: 50px;
   --text-size-h4: 20px;
   --text-size-span: 10.33px;
   --color-project-tech-stack-tag: #98dede;
 }
 
-/* HEADER */
-/*.header {
-  flex-direction: row-reverse;
-  padding: 20px;
-  background: no-repeat url("images/decorative_bg_1.png");
-  background-size: contain;
-}*/
-
-.nav {
-  display: flex;
-  justify-content: flex-end;
-}
 
 .menu {
   position: absolute;
@@ -230,14 +219,15 @@ html {
 }
 
 
-.header {
+.nav {
   display: flex;
-  padding: 20px;
 }
 
 @media (max-width: 767px ){
-  .header {
+  /* Mobile navbar */
+  .nav {
     flex-direction: row-reverse;
+    padding: 20px;
     background: no-repeat url("images/decorative_bg_1.png");
     background-size: contain;
   }
@@ -248,11 +238,38 @@ html {
 }
 
 @media (min-width: 768px) {
-  .menu-icon {
-    display: none;
+  /* Desktop navbar */
+  .nav {
+    padding: 30px;
   }
 
-  .menu-list {
+  .nav-items {
+    display: flex;
+    justify-content: center;
+    gap:  50px;
+    width: 100%;
+  }
 
+  .nav-items a {
+    position: relative;
+    text-decoration: none;
+    color: var(--dark-blue);
+    font: var(--text-size-p) "Poppins", serif;
+    font-weight: 400;
+  }
+
+  .nav-items a:hover:after,
+  .nav-items a:active:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 70%;
+    height: 2px;
+    background: var(--dark-blue);
+  }
+
+  .nav-icon {
+    display: none;
   }
 }
