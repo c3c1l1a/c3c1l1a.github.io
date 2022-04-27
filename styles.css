@@ -288,9 +288,9 @@ html {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    padding: 200px 10%;
-    background: navajowhite;
- 
+    padding: 10%;
+    background: no-repeat url("images/image_dots.png");
+    background-position: bottom right;
   }
   .section-header {
     font: 110px "Playfair Display", serif;
