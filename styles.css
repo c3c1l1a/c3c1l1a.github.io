@@ -22,12 +22,12 @@ html {
 }
 
 /* HEADER */
-.header {
+/*.header {
   flex-direction: row-reverse;
   padding: 20px;
   background: no-repeat url("images/decorative_bg_1.png");
   background-size: contain;
-}
+}*/
 
 .nav {
   display: flex;
@@ -229,7 +229,19 @@ html {
   border: none;
 }
 
+
+.header {
+  display: flex;
+  padding: 20px;
+}
+
 @media (max-width: 767px ){
+  .header {
+    flex-direction: row-reverse;
+    background: no-repeat url("images/decorative_bg_1.png");
+    background-size: contain;
+  }
+
   .menu-list {
     display: none;
   }
@@ -238,5 +250,9 @@ html {
 @media (min-width: 768px) {
   .menu-icon {
     display: none;
+  }
+
+  .menu-list {
+
   }
 }
