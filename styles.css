@@ -214,16 +214,17 @@ html {
     background-size: contain;
   }
 
-  /* Mobile projects */
+  /* Mobile project cards*/
   .project-cards {
+    display: grid;
     grid-template-columns: 1fr;
   }
 
-  .projects-header {
+  .project-cards-header {
     margin: 20px;
   }
 
-  .project-card {
+  .single-project-card {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -331,30 +332,47 @@ html {
     background-color: blanchedalmond;
   }
 
-  /* Desktop projects */
-  .projects-cards {
+  /* Desktop projects cards*/
+  .project-cards {
+    display: grid;
     grid-template-columns: 1fr 2fr;
   }
 
-  .projects-header {
+  .project-cards-header {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-align: right;
     padding-right: 120px;
+    background: navajowhite;
   }
 
-  .project-card {
+  .single-project-card {
     display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
     cursor: pointer;
   }
 
-  .project-card:hover .project-card-details {
-    display: flex;
-    flex-direction: column;
-    background-color: khaki;
+  .project-card-image {
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
   }
 
   .project-card-details {
-    display: none;
+    grid-column: 1 / -1;
+    grid-row: 4 / -1;
   }
+  
+  /*.single-project-card:hover .project-card-details {
+    display: flex;
+    flex-direction: column;
+    background-color: khaki;
+  }*/
+
+  .project-card-details {
+  
+    background: palegoldenrod;
+  }*/
 }
