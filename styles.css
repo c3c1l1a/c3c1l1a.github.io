@@ -364,15 +364,14 @@ html {
     grid-column: 1 / -1;
     grid-row: 4 / -1;
   }
-  
-  /*.single-project-card:hover .project-card-details {
+
+  .single-project-card:hover .project-card-details {
     display: flex;
     flex-direction: column;
     background-color: khaki;
-  }*/
+  }
 
   .project-card-details {
-  
-    background: palegoldenrod;
-  }*/
+    display: none;
+  }
 }
