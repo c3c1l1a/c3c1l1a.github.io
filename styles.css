@@ -27,17 +27,7 @@ html {
 
 
 
-.project-card {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background: var(--dark-blue);
-  padding-bottom: 10px;
-}
 
-.card-details {
-  margin: 0 20px;
-}
 
 .project-name {
   color: white;
@@ -247,6 +237,18 @@ html {
   .projects-header {
     margin: 20px;
   }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--dark-blue);
+    padding-bottom: 10px;
+  }
+
+  .card-details {
+    margin: 0 20px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -334,14 +336,26 @@ html {
   /* Desktop projects */
   .projects {
     grid-template-columns: 1fr 2fr;
-    background: red;
   }
 
   .projects-header {
-    background: navajowhite;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-align: right;
     padding-right: 120px;
+  }
+
+  .project-card {
+    display: grid;
+    cursor: pointer;
+  }
+
+  .project-card:hover .project-card-details {
+    display: flex;
+
+  }
+
+  .project-card-details {
+    display: none;
   }
 }
