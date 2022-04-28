@@ -1,5 +1,5 @@
 /*
-	BORDER BOX RESET
+  BORDER BOX RESET
 */
 html {
   box-sizing: border-box;
@@ -343,15 +343,70 @@ html {
   /* Desktop projects cards*/
   .project-cards {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 0;
+    grid-template-rows: auto;
     padding: 160px 0;
   }
 
+  .card-1 {
+    grid-column: 5 / -1;
+    grid-row: 1 / 3;
+  }
+
+  .card-2 {
+    grid-column: 1 / 4;
+    grid-row: 4 / 6;
+    width: 100%;
+    border: solid 10px red;
+  }
+
+  .card-6 {
+    grid-column: 8 / -1;
+    grid-row: 3 / 5;
+    border: solid 10px orange;
+    width: 100%;
+  }
+
+  .card-3 {
+    grid-column: 1 / 7;
+    grid-row: 6 / 9;
+    width: 100%;
+    border: solid 10px purple;
+  }
+
+  .card-5 {
+    grid-column: 8 / -1;
+    grid-row: 5 / 7;
+    border: solid 10px green;
+  }
+
+  .card-4 {
+    grid-column: 7 / 10;
+    grid-row: 9 / 11;
+    border: solid 10px magenta;
+  }
+
+  .image-geometry_2 {
+    width: 100%;
+    grid-column: 4 / 8;
+    grid-row: 3 / 6;
+    border: solid 10px blue;
+  }
+
+  .image-geometry_3 {
+    grid-column: 7 / -1;
+    border: solid 10px chocolate;
+  }
+
+
   .project-cards-header {
+    grid-column: 1 / 5;
+    grid-row: 1 / 3;
+    padding-right: 160px;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-align: right;
-    padding-right: 160px;
     background-image: url("images/image_dots.png");
     background-repeat: no-repeat;
     background-position: bottom left;
@@ -377,13 +432,13 @@ html {
     grid-row: 4 / -1;
   }
 
-  .single-project-card:hover .project-card-details {
+  /*.single-project-card:hover .project-card-details {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 50px;
     background-color: var(--dark-blue);
-  }
+  }*/
 
   .project-card-details {
     display: none;
@@ -424,3 +479,6 @@ html {
     fill: var(--dark-blue);
   }
 }
+
+
+
