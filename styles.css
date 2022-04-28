@@ -492,4 +492,15 @@ html {
   .project-card-more-button svg {
     fill: var(--dark-blue);
   }
+
+  .CTA-button:hover {
+    animation-name: pop-up;
+    animation-duration: 1s;
+  }
+
+  @keyframes pop-up {
+    from {transform: scale(1)}
+    to {transform: scale(1.2)}
+  }
 }
+
