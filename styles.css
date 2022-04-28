@@ -22,13 +22,7 @@ html {
   --color-project-tech-stack-tag: #98dede;
 }
 
-
-
-
-
-
-
-
+/*
 .project-name {
   color: white;
   font: var(--text-size-h4) "Poppins", serif;
@@ -165,7 +159,7 @@ html {
 .contact-form button {
   border: none;
 }
-
+*/
 
 .nav {
   display: flex;
@@ -230,7 +224,7 @@ html {
   }
 
   /* Mobile projects */
-  .projects {
+  .project-cards {
     grid-template-columns: 1fr;
   }
 
@@ -244,6 +238,12 @@ html {
     gap: 10px;
     background: var(--dark-blue);
     padding-bottom: 10px;
+  }
+
+  .project-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .card-details {
@@ -333,7 +333,7 @@ html {
   }
 
   /* Desktop projects */
-  .projects {
+  .projects-cards {
     grid-template-columns: 1fr 2fr;
   }
 
@@ -351,7 +351,8 @@ html {
 
   .project-card:hover .project-card-details {
     display: flex;
-
+    flex-direction: column;
+    background-color: khaki;
   }
 
   .project-card-details {
