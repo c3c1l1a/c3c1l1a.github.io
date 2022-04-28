@@ -51,13 +51,6 @@ html {
   font: var(--text-size-button) "Poppins", serif;
 }
 
-.article-summery {
-  padding: 20px 0;
-  font: var(--text-size-p) "Poppins", serif;
-  color: var(--dark-blue);
-}
-
-
 
 .tech-stack {
   display: flex;
@@ -206,6 +199,12 @@ html {
     text-decoration: none;
   }
 
+  .section-summery {
+    padding: 20px 0;
+    font: var(--text-size-p) "Poppins", serif;
+    color: var(--dark-blue);
+  }
+
   /* Mobile CTA */
   .CTA {
     flex-direction: column;
@@ -308,6 +307,12 @@ html {
     color: white;
     font: var(--text-size-button) "Poppins", serif;
     text-decoration: none;
+  }
+
+  .section-summery {
+    padding: 20px 0;
+    font: var(--text-size-p) "Poppins", serif;
+    color: var(--dark-blue);
   }
 
 
