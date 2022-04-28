@@ -359,49 +359,43 @@ html {
     width: 100%;
     grid-column: 1 / 4;
     grid-row: 4 / 6;
-    border: solid 10px red;
   }
 
   .card-6 {
     width: 100%;
     grid-column: 8 / -1;
     grid-row: 3 / 5;
-    border: solid 10px orange;
   }
 
   .card-3 {
     width: 100%;
     grid-column: 1 / 6;
     grid-row: 6 / 10;
-    border: solid 10px purple;
+    background: red;
   }
 
   .card-5 {
     width: 100%;
     grid-column: 8 / -1;
     grid-row: 5 / 7;
-    border: solid 10px green;
   }
 
   .card-4 {
     width: 100%;
     grid-column: 6 / 10;
     grid-row: 10 / 14;
-    border: solid 10px magenta;
   }
 
   .image-geometry_2 {
     width: 100%;
     grid-column: 4 / 8;
     grid-row: 3 / 6;
-    border: solid 10px blue;
   }
 
   .image-geometry_3 {
     width: 100%;
     grid-column: 6 / -1;
     grid-row: 7 / 10;
-    border: solid 10px chocolate;
   }
 
   .image-geometry_4 {
@@ -440,6 +434,7 @@ html {
 
   .project-card-image {
     width: 100%;
+    height: 100%;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
   }
