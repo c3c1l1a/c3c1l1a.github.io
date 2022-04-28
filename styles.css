@@ -154,21 +154,12 @@ html {
 }
 */
 
-.nav {
-  display: flex;
-}
 
-.CTA {
-  display: flex;
-}
-
-.projects {
-  display: grid;
-}
 
 @media (max-width: 767px ){
   /* Mobile navbar */
   .nav {
+    display: flex;
     flex-direction: row-reverse;
     padding: 20px;
     background: no-repeat url("images/decorative_bg_1.png");
@@ -207,6 +198,7 @@ html {
 
   /* Mobile CTA */
   .CTA {
+    display: flex;
     flex-direction: column;
     gap: 20px;
   }
@@ -255,6 +247,7 @@ html {
 
   /* Desktop navbar */
   .nav {
+    display: flex;
     padding: 30px;
     border-bottom: solid 2px #dddfe6;
   }
@@ -318,6 +311,7 @@ html {
 
   /* Desktop CTA  */
   .CTA {
+    display: flex;
     justify-content: space-between;
   }
 
