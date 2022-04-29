@@ -282,6 +282,21 @@ html {
 }
 
 @media (min-width: 768px) {
+  .CTA-my-name {
+    animation-name: slide-header;
+    animation-duration: 2s;
+  }
+
+  @keyframes slide-header {
+    from {
+      transform: translate(-2000px, 0);
+    }
+
+    to {
+      transform: translate(0, 0);
+    }
+  }
+
   /* Desktop navbar */
   .nav {
     display: flex;
@@ -387,9 +402,9 @@ html {
   }
 
   .card-2 {
-    width: 100%;
     grid-column: 1 / 4;
     grid-row: 4 / 6;
+    width: 100%;
   }
 
   .card-6 {
@@ -588,5 +603,35 @@ html {
   .social_icons {
     gap: 40px;
     align-items: center;
+  }
+
+  .CTA-button:hover {
+    animation-name: pop-up;
+    animation-duration: 1s;
+  }
+
+  @keyframes pop-up {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(1.2);
+    }
+  }
+
+  .CTA-self-intro {
+    animation-name: slide-intro-in;
+    animation-duration: 3s;
+  }
+
+  @keyframes slide-intro-in {
+    from {
+      transform: translate(-2000px, 0);
+    }
+
+    to {
+      transform: translate(0, 0);
+    }
   }
 }
