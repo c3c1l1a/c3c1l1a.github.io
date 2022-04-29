@@ -525,7 +525,7 @@ html {
   /* About section  */
   .about-section {
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(7, 1fr);
     padding: 10vw;
   }
 
@@ -535,25 +535,24 @@ html {
     padding: 5vw;
   }
 
-
   .languages {
     grid-column: 1 / 3;
     grid-row: 1 / 4;
-    margin: 0px;
+    margin: 0;
     padding: 5vw;
-  } 
+  }
 
   .frameworks {
     grid-column: 3 / 5;
     grid-row: 1 / 4;
-    margin: 0px;
+    margin: 0;
     padding: 5vw;
   }
 
   .skills {
     grid-column: 1 / 3;
     grid-row: 4 / 7;
-    margin: 0px;
+    margin: 0;
     padding: 5vw;
   }
 
@@ -585,12 +584,11 @@ html {
     color: #92dcdc;
     padding: 0;
   }
-
+  
   .social_icons {
     gap: 40px;
     align-items: center;
   }
-
 }
 
 
