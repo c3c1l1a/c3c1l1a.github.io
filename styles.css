@@ -469,14 +469,9 @@ html {
   }
 
   .project-card-details {
-    grid-column: 1 / -1;
-    grid-row: 4 / -1;
-    margin: 0px;
-  }
-  
-  .project-card-details{
     display: none;
   }
+
   .single-project-card:hover .project-card-details {
     display: flex;
     flex-direction: column;
@@ -486,6 +481,7 @@ html {
     bottom: 0;
     z-index: 10;
     padding: 5% 5%;
+    margin: 0;
     background-color: var(--dark-blue);
   }
 
