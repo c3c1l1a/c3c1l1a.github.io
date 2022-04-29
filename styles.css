@@ -260,6 +260,26 @@ html {
   border: none;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--dark-blue);
+  padding: 20px;
+}
+
+.social_icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footer-button {
+  width: fit-content;
+  color: #92dcdc;
+  padding: 0;
+}
+
 
 @media (min-width: 768px) {
   /* Desktop navbar */
