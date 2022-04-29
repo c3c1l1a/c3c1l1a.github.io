@@ -580,16 +580,13 @@ html {
     padding: 2vw 10vw;
   }
 
-  .footer-button{
+  .footer-button {
     color: #92dcdc;
     padding: 0;
   }
-  
+
   .social_icons {
     gap: 40px;
     align-items: center;
   }
 }
-
-
-
