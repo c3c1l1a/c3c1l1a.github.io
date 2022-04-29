@@ -576,6 +576,26 @@ html {
     background-image: url("images/image-geometry_6.png"), url("images/image-geometry_7.png");
     background-position: top left, bottom right;
   }
+
+  /* Footer */
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    background: var(--dark-blue);
+    padding: 2vw 10vw;
+  }
+
+  .footer-button{
+    color: #92dcdc;
+    padding: 0;
+  }
+  
+  .social_icons {
+    gap: 40px;
+    align-items: center;
+  }
+
 }
 
 
