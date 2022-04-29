@@ -405,14 +405,12 @@ html {
     grid-column: 1 / 4;
     grid-row: 4 / 6;
     width: 100%;
-    border: solid 10px red;
   }
 
   .card-6 {
     width: 100%;
     grid-column: 8 / -1;
     grid-row: 3 / 5;
-    border: solid 10px orange;
     width: 100%;
   }
 
@@ -426,7 +424,6 @@ html {
     width: 100%;
     grid-column: 8 / -1;
     grid-row: 5 / 7;
-    border: solid 10px green;
   }
 
   .card-4 {
