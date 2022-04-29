@@ -153,7 +153,7 @@ html {
 }
 
 .about-summery-container {
-  padding:  20px;
+  padding: 20px;
 }
 
 .tech-stack {
@@ -281,7 +281,6 @@ html {
   padding: 0;
 }
 
-
 @media (min-width: 768px) {
   /* Desktop navbar */
   .nav {
@@ -294,7 +293,7 @@ html {
   .nav-items {
     display: flex;
     justify-content: center;
-    gap:  50px;
+    gap: 50px;
     width: 100%;
   }
 
@@ -306,8 +305,8 @@ html {
     font-weight: 400;
   }
 
-  .nav-items a:hover:after,
-  .nav-items a:active:after {
+  .nav-items a:hover::after,
+  .nav-items a:active::after {
     content: "";
     position: absolute;
     left: 0;
