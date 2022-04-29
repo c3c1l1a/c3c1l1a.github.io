@@ -347,7 +347,6 @@ html {
     color: var(--dark-blue);
   }
 
-
   /* Desktop CTA  */
   .CTA {
     display: flex;
@@ -364,7 +363,7 @@ html {
     background-position: bottom right;
     background-size: 10vw;
   }
-  
+
   .CTA-decorative-img {
     width: 100%;
     height: 100vh;
@@ -372,7 +371,7 @@ html {
     background-size: contain;
   }
 
-  /* Desktop projects cards*/
+  /* Desktop projects cards */
   .project-cards {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -436,7 +435,6 @@ html {
     width: 100%;
     grid-column: 5 / 6;
     grid-row: 10 / 11;
-
   }
 
   .image-geometry_5 {
@@ -475,6 +473,7 @@ html {
     grid-row: 4 / -1;
     margin: 0px;
   }
+  
   .project-card-details{
     display: none;
   }
