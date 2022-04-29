@@ -612,24 +612,25 @@ html {
 
   @keyframes pop-up {
     from {
-      transform: scale(1)
+      transform: scale(1);
     }
 
     to {
-      transform: scale(1.2)
+      transform: scale(1.2);
     }
   }
+
   .CTA-self-intro {
     animation-name: slide-intro;
     animation-duration: 3s;
   }
+
   @keyframes slide-intro {
     from {
       transform: translate(-2000px, 0);
     }
     to {
-      transform: translate(0px, 0);
+      transform: translate(0, 0);
     }
   }
 }
-
