@@ -629,6 +629,7 @@ html {
     from {
       transform: translate(-2000px, 0);
     }
+
     
     to {
       transform: translate(0, 0);
