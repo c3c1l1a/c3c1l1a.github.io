@@ -621,16 +621,15 @@ html {
   }
 
   .CTA-self-intro {
-    animation-name: slide-intro;
+    animation-name: slide-intro-in;
     animation-duration: 3s;
   }
 
-  @keyframes slide-intro {
+  @keyframes slide-intro-in {
     from {
       transform: translate(-2000px, 0);
     }
 
-    
     to {
       transform: translate(0, 0);
     }
