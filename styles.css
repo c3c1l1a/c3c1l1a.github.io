@@ -291,8 +291,9 @@ html {
     from {
       transform: translate(-2000px, 0);
     }
+
     to {
-      transform: translate(0px, 0);
+      transform: translate(0, 0);
     }
   }
 
@@ -410,7 +411,6 @@ html {
     width: 100%;
     grid-column: 8 / -1;
     grid-row: 3 / 5;
-    width: 100%;
   }
 
   .card-3 {
@@ -537,7 +537,6 @@ html {
     fill: var(--dark-blue);
   }
 
-
   /* About section  */
   .about-section {
     display: grid;
@@ -612,8 +611,13 @@ html {
   }
 
   @keyframes pop-up {
-    from {transform: scale(1)}
-    to {transform: scale(1.2)}
+    from {
+      transform: scale(1)
+    }
+
+    to {
+      transform: scale(1.2)
+    }
   }
   .CTA-self-intro {
     animation-name: slide-intro;
