@@ -232,7 +232,7 @@ html {
   padding: 10px;
   border: solid 2px #dfdfe0;
   background-color: #fff;
-  color: #7d7c84;
+  color: #76757d;
   font: 10px "Poppins", serif;
   border-radius: 4px;
 }
@@ -488,6 +488,19 @@ html {
   }
 
   .single-project-card:hover .project-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    padding: 5% 5%;
+    margin: 0;
+    background-color: var(--dark-blue);
+  }
+
+  .single-project-card:focus .project-card-details {
     display: flex;
     flex-direction: column;
     gap: 20px;
