@@ -282,21 +282,6 @@ html {
 }
 
 @media (min-width: 768px) {
-  .CTA-my-name {
-    animation-name: slide-header;
-    animation-duration: 2s;
-  }
-
-  @keyframes slide-header {
-    from {
-      transform: translate(-2000px, 0);
-    }
-
-    to {
-      transform: translate(0, 0);
-    }
-  }
-
   /* Desktop navbar */
   .nav {
     display: flex;
@@ -630,21 +615,6 @@ html {
 
     to {
       transform: scale(1.2);
-    }
-  }
-
-  .CTA-self-intro {
-    animation-name: slide-intro-in;
-    animation-duration: 3s;
-  }
-
-  @keyframes slide-intro-in {
-    from {
-      transform: translate(-2000px, 0);
-    }
-
-    to {
-      transform: translate(0, 0);
     }
   }
 }
