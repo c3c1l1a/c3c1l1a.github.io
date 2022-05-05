@@ -1,6 +1,7 @@
 # Cecilia Mukima Portfolio
 
-> This is my programming portfolio that details my past and present projects.  
+> This is my programming portfolio that details my past and present projects.
+> To view it here is the [link](https://c3c1l1a.github.io)
 
 
 ## Built With
@@ -42,6 +43,7 @@ git clone https://github.com/c3c1l1a/Portfolio.git
 - GitHub: [@c3c1l1a](https://github.com/c3c1l1a/)
 - Twitter: [@cMukima](https://twitter.com/CMukima)
 - LinkedIn: [cecilia-wangui-mukima](https://linkedin.com/in/linkedinhandle)
+- Profile [c3cl1ia.github.io](https://c3c1l1a.github.io)
 
 ## Acknowledgments
 
