@@ -12,7 +12,12 @@ close.addEventListener('click', function () {
   document.querySelector('.menu').style.display = 'none';
 });
 
-let navItem = document.querySelector('.nav-item');
-navItem.addEventListener('click', function(){
-  document.querySelector('.menu').style.display = 'none';
+let navItems = document.querySelectorAll('.nav-item');
+navItems.forEach(function(navItem){
+  navItem.addEventListener('click', function(){
+    document.querySelector('.menu').style.display = 'none';
+    console.log('what');
+  }); 
 });
+   
+
