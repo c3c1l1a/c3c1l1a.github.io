@@ -54,7 +54,7 @@ html {
   padding: 20px;
 }
 
-.mobile-menu > ul  {
+.mobile-menu > ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
