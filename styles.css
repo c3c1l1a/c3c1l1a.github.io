@@ -31,7 +31,7 @@ html {
 }
 
 .menu {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 100%;
   background: bisque;
