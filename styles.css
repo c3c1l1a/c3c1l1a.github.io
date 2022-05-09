@@ -30,7 +30,7 @@ html {
   background-size: contain;
 }
 
-.menu {
+.mobile-menu {
   position: fixed;
   display: none;
   flex-direction: column;
@@ -44,13 +44,17 @@ html {
   background-size: contain;
 }
 
+.desktop-menu {
+  display: none;
+}
+
 .close-icon {
   width: fit-content;
   align-self: flex-end;
   padding: 20px;
 }
 
-.nav-items {
+.mobile-menu > ul  {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,7 +64,7 @@ html {
   font: var(--text-size-button) "Poppins", serif;
 }
 
-.nav-items  * {
+.mobile-menu  * {
   text-align: center;
   text-decoration: none;
 }
@@ -316,19 +320,25 @@ html {
   /* Desktop navbar */
   .nav {
     display: flex;
-    padding: 30px;
     border-bottom: solid 2px #dddfe6;
-    background: transparent;
   }
 
-  .nav-items {
+  .mobile-menu {
+    display: none;
+  }
+
+
+  .desktop-menu {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 50px;
     width: 100%;
+    height: fit-content;
   }
 
-  .nav-items a {
+  .desktop-menu a {
     position: relative;
     text-decoration: none;
     color: var(--dark-blue);
@@ -336,8 +346,8 @@ html {
     font-weight: 400;
   }
 
-  .nav-items a:hover::after,
-  .nav-items a:active::after {
+  .desktop-menu a:hover::after,
+  .desktop-menu a:active::after {
     content: "";
     position: absolute;
     left: 0;
