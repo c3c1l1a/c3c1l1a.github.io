@@ -11,3 +11,8 @@ let close = document.querySelector('.close-icon');
 close.addEventListener('click', function () {
   document.querySelector('.menu').style.display = 'none';
 });
+
+let navItem = document.querySelector('.nav-item');
+navItem.addEventListener('click', function(){
+  document.querySelector('.menu').style.display = 'none';
+});
