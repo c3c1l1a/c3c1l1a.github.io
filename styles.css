@@ -30,8 +30,29 @@ html {
   background-size: contain;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: bisque;
+}
+
+.close-icon {
+  text-align: right;
+  padding: 20px;
+}
+
 .nav-items {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:  20px;
+  width: 100%;
+  height: 70vh;
+}
+
+.nav-items  * {
+  text-align: center;
 }
 
 /* Mobile Generic section styles */
