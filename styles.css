@@ -58,13 +58,13 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap:  20px;
+  gap: 20px;
   width: 100%;
   height: 93vh;
   font: var(--text-size-button) "Poppins", serif;
 }
 
-.mobile-menu  * {
+.mobile-menu * {
   text-align: center;
   text-decoration: none;
 }
@@ -326,7 +326,6 @@ html {
   .mobile-menu {
     display: none;
   }
-
 
   .desktop-menu {
     display: flex;
