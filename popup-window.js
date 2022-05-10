@@ -58,8 +58,40 @@ for (let project in projects){
 	const projectImg = document.createElement('img');
 	projectImg.src = projects[project].image;
 	projectImg.className = "project-card-image";
-
 	singleProjectCard.appendChild(projectImg);
 
+	const projectCardDetails = document.createElement('div');
+	projectCardDetails.className = 'project-card-details';
+
+	const projectName = document.createElement('h3');
+	const projectNameText = document.createTextNode(projects[project].name);
+	projectName.appendChild(projectNameText);
+	projectName.className = "project-card-title";
+	projectCardDetails.appendChild(projectName);
+
+	const technologies = document.createElement('ul');
+	for (let technology in projects[project].technologies){
+		const technologyItem = document.createElement('li');
+		const technologiesDescription = document.createTextNode(projects[project].technologies[technology]);
+		technologyItem.appendChild(technologiesDescription);
+		technologies.appendChild(technologyItem);
+	}
+	projectCardDetails.appendChild(technologies);
+
+	const projectCardMoreButton = document.createElement('a')
+	projectCardMoreButton.href = projects[project].linkToLive;
+	projectCardMoreButton.className = "project-card-more-button section-button";
+	projectCardDetails.appendChild(projectCardMoreButton);
+
+	const buttonDescription = document.createElement('span');
+	const buttonDescriptionText = document.createTextNode('See this project');
+	buttonDescription.appendChild(buttonDescriptionText);
+	projectCardMoreButton.appendChild(buttonDescription);
+
+	const buttonIcon = document.createElement('img');
+	buttonIcon.src = 'images/button-arrow-icon.svg';
+	projectCardMoreButton.appendChild(buttonIcon);
+
+	singleProjectCard.appendChild(projectCardDetails);
 	portfolio.appendChild(singleProjectCard);
 }
