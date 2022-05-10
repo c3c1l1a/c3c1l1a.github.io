@@ -334,7 +334,6 @@ html {
     align-items: center;
     gap: 50px;
     width: 100%;
-    height: fit-content;
   }
 
   .desktop-menu a {
