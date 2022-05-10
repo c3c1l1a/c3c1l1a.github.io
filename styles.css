@@ -42,7 +42,7 @@ html {
   background-image: url("images/image_geometry_menu_1.png"), url("images/image_geometry_menu_2.png");
   background-size: 85%, 100%;
   background-position: top left, bottom right;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
 .desktop-menu {
@@ -61,7 +61,7 @@ html {
   justify-content: center;
   gap: 20px;
   width: 100%;
-  padding: 150px 50px 300px 50px; 
+  padding: 150px 50px 300px 50px;
 }
 
 .mobile-menu * {
@@ -69,7 +69,7 @@ html {
   text-decoration: none;
   font: 16px "Poppins", serif;
   font-weight: 400;
-  color:  #000;
+  color: #000;
 }
 
 /* Mobile Generic section styles */
