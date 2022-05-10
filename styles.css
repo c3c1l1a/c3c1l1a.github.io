@@ -55,7 +55,7 @@ html {
   padding: 30px;
 }
 
-.mobile-menu > ul {
+.mobile-menu>ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -157,7 +157,7 @@ html {
   align-items: center;
 }
 
-.project-tech-stack-tags > * {
+.project-tech-stack-tags>* {
   display: inline-block;
   padding: 5px 10px;
   color: var(--dark-blue);
@@ -319,7 +319,48 @@ html {
   padding: 0;
 }
 
+/* Mobile Modal */
+.project-details-modal {
+  display: flex;
+  flex-direction: column;
+  padding: 20.25px;
+  gap: 23px;
+}
+
+.project-details-modal .close {
+  text-align: right;
+}
+
+.project-details-modal .project-card-title {
+  color: #1a2236;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 80%;
+  font-family: "Poppins", serif;
+}
+
+.project-details-modal .project-tech-stack-tags>li {
+  background-color: #fff;
+  border: 0.52px solid #1a2236;
+}
+
+.project-details-modal .thumbnails {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.project-details-modal .thumbnails > div {
+  flex-basis: 90px;
+  flex: 1;
+}
+
+.project-details-modal .thumbnails > div img {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
+
   /* Desktop navbar */
   .nav {
     display: flex;
@@ -551,7 +592,7 @@ html {
     align-items: center;
   }
 
-  .project-tech-stack-tags > * {
+  .project-tech-stack-tags>* {
     display: inline-block;
     padding: 2% 5%;
     margin-right: 10px;
