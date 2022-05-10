@@ -1,17 +1,16 @@
-//on-click on humburger menu display the menu
+// Clicking the humburger icon displays the menu
 let humburger = document.querySelector('.nav-icon');
-
 humburger.addEventListener('click', function () {
-  //show the mobile menu
   document.querySelector('.mobile-menu').style.display = 'flex';
 });
 
-//hide the menu when close icon is clicked
+// Hide the menu when close icon is clicked
 let close = document.querySelector('.close-icon');
 close.addEventListener('click', function () {
   document.querySelector('.mobile-menu').style.display = 'none';
 });
 
+// Close the menu when menu item is clicked
 let navItems = document.querySelectorAll('.nav-item');
 navItems.forEach(function(navItem){
   navItem.addEventListener('click', function(){
