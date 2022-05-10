@@ -321,10 +321,13 @@ html {
 
 /* Mobile Modal */
 .project-details-modal {
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 20.25px;
   gap: 23px;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
 }
 
 .project-details-modal .close {
@@ -357,6 +360,24 @@ html {
 
 .project-details-modal .thumbnails > div img {
   width: 100%;
+}
+
+.project-details-modal .project-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 29px;
+}
+
+.project-details-modal .section-button {
+  border: 1px solid #1a2236;
+  background-color: #fff;
+  color: #1a2236;
+  width: 80%;
+}
+
+.project-details-modal .section-button svg {
+  fill: #1a2236;
 }
 
 @media (min-width: 768px) {

@@ -79,7 +79,8 @@ for (let project in projects){
 	projectCardDetails.appendChild(technologies);
 
 	const projectCardMoreButton = document.createElement('a')
-	projectCardMoreButton.href = projects[project].linkToLive;
+	// projectCardMoreButton.href = projects[project].linkToLive;
+  projectCardMoreButton.id = projects[project].name;
 	projectCardMoreButton.className = "project-card-more-button section-button";
 	projectCardDetails.appendChild(projectCardMoreButton);
 
@@ -95,3 +96,23 @@ for (let project in projects){
 	singleProjectCard.appendChild(projectCardDetails);
 	portfolio.appendChild(singleProjectCard);
 }
+
+//Logic for modal pop-up
+const seeProjectButton = document.querySelectorAll('.project-card-more-button');
+const modal = document.querySelector('.project-details-modal');
+const modalCloseButton = document.querySelector('.project-details-modal .close');
+//show modal on click of see project button
+for (let i = 0; i < seeProjectButton.length; i++){
+  seeProjectButton[i].addEventListener('click', (event) => {
+    console.log(event.target.id);
+    modal.style.display = 'flex';
+  }
+  );
+}
+
+//close modal on click of close button
+modalCloseButton.addEventListener('click', () => {
+  modal.style.display = 'none';
+}
+);
+
