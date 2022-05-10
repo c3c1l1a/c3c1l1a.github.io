@@ -32,16 +32,17 @@ html {
 
 .mobile-menu {
   position: fixed;
-  display: none;
+  display: flex;
   flex-direction: column;
   top: 0;
   left: 0;
   width: 100vw;
+  height: 100vh;
   background-color: #fff;
   background-image: url("images/image_geometry_menu_1.png"), url("images/image_geometry_menu_2.png");
+  background-size: 85%, 100%;
   background-position: top left, bottom right;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-repeat: no-repeat; 
 }
 
 .desktop-menu {
@@ -51,7 +52,7 @@ html {
 .close-icon {
   width: fit-content;
   align-self: flex-end;
-  padding: 20px;
+  padding: 30px;
 }
 
 .mobile-menu > ul {
@@ -60,13 +61,15 @@ html {
   justify-content: center;
   gap: 20px;
   width: 100%;
-  height: 93vh;
-  font: var(--text-size-button) "Poppins", serif;
+  padding: 150px 50px 300px 50px; 
 }
 
 .mobile-menu * {
   text-align: center;
   text-decoration: none;
+  font: 16px "Poppins", serif;
+  font-weight: 400;
+  color:  #000;
 }
 
 /* Mobile Generic section styles */
