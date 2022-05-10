@@ -30,8 +30,46 @@ html {
   background-size: contain;
 }
 
-.nav-items {
+.mobile-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  background-image: url("images/image_geometry_menu_1.png"), url("images/image_geometry_menu_2.png");
+  background-size: 85%, 100%;
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+}
+
+.desktop-menu {
   display: none;
+}
+
+.close-icon {
+  width: fit-content;
+  align-self: flex-end;
+  padding: 30px;
+}
+
+.mobile-menu > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 150px 50px 300px 50px;
+}
+
+.mobile-menu * {
+  text-align: center;
+  text-decoration: none;
+  font: 16px "Poppins", serif;
+  font-weight: 400;
+  color: #000;
 }
 
 /* Mobile Generic section styles */
@@ -232,7 +270,7 @@ html {
   padding: 10px;
   border: solid 2px #dfdfe0;
   background-color: #fff;
-  color: #7d7c84;
+  color: #76757d;
   font: 10px "Poppins", serif;
   border-radius: 4px;
 }
@@ -282,37 +320,26 @@ html {
 }
 
 @media (min-width: 768px) {
-  .CTA-my-name {
-    animation-name: slide-header;
-    animation-duration: 2s;
-  }
-
-  @keyframes slide-header {
-    from {
-      transform: translate(-2000px, 0);
-    }
-
-    to {
-      transform: translate(0, 0);
-    }
-  }
-
   /* Desktop navbar */
   .nav {
     display: flex;
-    padding: 30px;
     border-bottom: solid 2px #dddfe6;
-    background: transparent;
   }
 
-  .nav-items {
+  .mobile-menu {
+    display: none;
+  }
+
+  .desktop-menu {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 50px;
     width: 100%;
   }
 
-  .nav-items a {
+  .desktop-menu a {
     position: relative;
     text-decoration: none;
     color: var(--dark-blue);
@@ -320,8 +347,8 @@ html {
     font-weight: 400;
   }
 
-  .nav-items a:hover::after,
-  .nav-items a:active::after {
+  .desktop-menu a:hover::after,
+  .desktop-menu a:active::after {
     content: "";
     position: absolute;
     left: 0;
@@ -500,6 +527,19 @@ html {
     background-color: var(--dark-blue);
   }
 
+  .single-project-card:focus .project-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    padding: 5% 5%;
+    margin: 0;
+    background-color: var(--dark-blue);
+  }
+
   .project-card-title {
     color: white;
     font: 1.7vw "Poppins", serif;
@@ -617,21 +657,6 @@ html {
 
     to {
       transform: scale(1.2);
-    }
-  }
-
-  .CTA-self-intro {
-    animation-name: slide-intro-in;
-    animation-duration: 3s;
-  }
-
-  @keyframes slide-intro-in {
-    from {
-      transform: translate(-2000px, 0);
-    }
-
-    to {
-      transform: translate(0, 0);
     }
   }
 }
