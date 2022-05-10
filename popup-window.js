@@ -1,4 +1,4 @@
-let projects = {
+let projects = [
 	{
 		image: "images/project_ing_placeholder_1.jpg",
 		name: "Project 1",
@@ -47,4 +47,19 @@ let projects = {
 		linkToLive: "https://c3c1l1a.github.io",
 		linkToSource: "https://github.com/c3c1l1a/c3c1l1a.github.io"
 	},
+]
+
+const portfolio = document.querySelector('#portfolio');
+
+for (let project in projects){
+	const singleProjectCard = document.createElement('article');
+	singleProjectCard.className = "single-project-card card-1";
+
+	const projectImg = document.createElement('img');
+	projectImg.src = projects[project].image;
+	projectImg.className = "project-card-image";
+
+	singleProjectCard.appendChild(projectImg);
+
+	portfolio.appendChild(singleProjectCard);
 }
