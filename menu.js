@@ -1,5 +1,5 @@
 // Clicking the humburger icon displays the menu
-let humburger = document.querySelector('.nav-icon');
+const humburger = document.querySelector('.nav-icon');
 humburger.addEventListener('click', function () {
   document.querySelector('.mobile-menu').style.display = 'flex';
 });
