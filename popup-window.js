@@ -132,14 +132,19 @@ function populateProjectsPopupModal(projectData){
 
 		let p = projectsPopModal.querySelector(".js-projects-popupModal__description");
 		p.textContent = projectData.description;
+
+		let close = projectsPopModal.querySelector(".js-projects-popupModal__close");
+		close.addEventListener('click', (event) => {
+			projectsPopModal.parentNode.removeChild(projectsPopModal);
+		});
 		return projectsPopModal;
 	}
 }
 
 
-modalCloseButton.addEventListener('click', () => {
+/*modalCloseButton.addEventListener('click', () => {
   console.log("close modal");
   //modal.style.display = 'none';
 }
-);
+);*/
 
