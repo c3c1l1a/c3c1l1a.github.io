@@ -321,7 +321,7 @@ html {
 
 /* Mobile Modal */
 .project-details-modal {
-  display: none;
+  display: flex;
   flex-direction: column;
   padding: 20.25px;
   gap: 23px;

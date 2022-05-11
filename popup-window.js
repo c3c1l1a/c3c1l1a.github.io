@@ -99,20 +99,47 @@ for (const [id, project] of Object.entries(projects)){
 
 //Logic for modal pop-up
 const seeProjectButton = document.querySelectorAll('.project-card-more-button');
-const modal = document.querySelector('.project-details-modal');
+let body = document.querySelector("body");
+//const modal = document.querySelector('.project-details-modal');
 const modalCloseButton = document.querySelector('.project-details-modal .close');
 //show modal on click of see project button
 for (let i = 0; i < seeProjectButton.length; i++){
   seeProjectButton[i].addEventListener('click', (event) => {
-    console.log(projects[event.currentTarget.id]);
-    modal.style.display = 'flex';
+  	const modal = populateProjectsPopupModal(projects[event.currentTarget.id]);
+    body.appendChild(modal);
   }
   );
 }
 
-//close modal on click of close button
+
+// Dynamically populate the Projects Popup modal template
+function populateProjectsPopupModal(projectData){
+	if ('content' in document.createElement('template')){
+		let template = document.querySelector("#js-projects-popupModal");
+		let projectsPopModal = template.content.firstElementChild.cloneNode(true);
+		let h3 = projectsPopModal.querySelector(".js-projects-popupModal__name");
+		h3.textContent = projectData.name;
+		
+		let li = projectsPopModal.querySelectorAll(".js-projects-popupModal__technology");
+		for (let i = 0; i < li.length; i++) {
+			li[i].textContent = projectData.technologies[i];
+		}
+
+		let img = projectsPopModal.querySelectorAll(".js-projects-popupModal__image");
+		for (let i = 0; i < img.length; i++){
+			img[i].src = projectData.image;
+		}
+
+		let p = projectsPopModal.querySelector(".js-projects-popupModal__description");
+		p.textContent = projectData.description;
+		return projectsPopModal;
+	}
+}
+
+
 modalCloseButton.addEventListener('click', () => {
-  modal.style.display = 'none';
+  console.log("close modal");
+  //modal.style.display = 'none';
 }
 );
 
