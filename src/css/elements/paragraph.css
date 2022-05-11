@@ -1,0 +1,5 @@
+.paragraph {
+  padding: 20px 0;
+  font: var(--text-regular) var(--primary-font-family);
+  color: var(--primary-color);
+}

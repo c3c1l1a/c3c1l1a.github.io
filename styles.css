@@ -1,13 +1,5 @@
 
 /* Mobile navbar */
-.nav {
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 20px;
-  background: no-repeat url("images/decorative_bg_1.png");
-  background-size: contain;
-}
-
 .mobile-menu {
   position: fixed;
   display: none;
@@ -50,8 +42,9 @@
 
 /* Mobile Generic section styles */
 .section-header {
+  background: red;
   font: var(--text-size-h1) "Playfair Display", serif;
-  color: var(--dark-blue);
+  color: var(--primary-color);
   line-height: 100%;
 }
 
@@ -75,15 +68,8 @@
 }
 
 /* Mobile CTA */
-.CTA {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 
-.CTA-container {
-  padding: 20px;
-}
+
 
 .CTA-decorative-img {
   width: 100%;
@@ -109,16 +95,6 @@
   background: var(--dark-blue);
   padding-bottom: 10px;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 .image-geometry_2,
@@ -328,7 +304,7 @@
   /* Desktop navbar */
   .nav {
     display: flex;
-    border-bottom: solid 2px #dddfe6;
+    
   }
 
   .mobile-menu {

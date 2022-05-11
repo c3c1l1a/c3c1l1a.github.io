@@ -15,14 +15,16 @@ html {
   /* Colors */
   --primary-color: #1a2236;
   --secondary-color: #98dede;
+  --tertiary-coloe: #dddfe6;
 
   /* Font family */
   --primary-font-family: "Poppins", serif;
-  --secondary-font-family
+  --secondary-font-family: "Playfair Display", serif;
 
   /* Text size */
   --text-regular: 16px;
   --text-large: 20px;
+  --text-xx-large: 50px;
 
   /* Font weight */
   --font-regular: 300;

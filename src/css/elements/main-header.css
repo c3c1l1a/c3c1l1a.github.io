@@ -1,0 +1,5 @@
+.main-header {
+  font: var(--text-xx-large) var(--secondary-font-family);
+  color: var(--dark-blue);
+  line-height: 100%;
+}
