@@ -71,7 +71,7 @@ function createProjectsCard(){
 
 			let button = projectCard.querySelector(".js-project-card__button");
 			button.addEventListener('click', (event)=> {
-				populateProjectsPopupModal(projects[event.currentTarget.id]);
+				populateProjectsPopupModal(projectItem);
 			});
 
 			const projects = document.querySelector(".js-projects");
