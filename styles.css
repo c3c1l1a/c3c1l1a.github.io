@@ -299,6 +299,10 @@ html {
   border: none;
 }
 
+.contact-form .contact-form__error--emailCase {
+  display: none;
+}
+
 .footer {
   display: flex;
   flex-direction: column;

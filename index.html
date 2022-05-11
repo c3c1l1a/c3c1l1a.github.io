@@ -199,17 +199,18 @@
     <section id="contact" class="form-section">
       <h2 class="form-section-header section-header">Get started</h2>
       <p class="section-summery">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-      <form class="contact-form" autocomplete="off" action="https://formspree.io/f/mbjwpovv" method="post">
+      <form class="contact-form js-contact-form" autocomplete="off" action="https://formspree.io/f/mbjwpovv" method="post">
         <label for="name">
           Your name
           <input id="name" class="form-field" type="text" name="name" maxlength="30" placeholder="Your name" required>
         </label>
         <label for="email">
           Your email
-          <input id="email" class="form-field" type="email" name="email" placeholder="Your email" required>
+          <input class="js-contact-form__email" id="email" class="form-field" type="email" name="email" placeholder="Your email" required>
         </label>
         <textarea class="form-field" name="message" placeholder="Enter your message here.." maxlength="500" required></textarea>
-        <button class="form-button section-button" type="submit">
+        <label class="contact-form__error--emailCase js-contact-form__error--emailCase">Your email needs to be in lower case</label>
+        <button class="form-button section-button " type="submit">
           Start Collaboration
         </button>
       </form>
@@ -271,5 +272,6 @@
     </footer>
   </main>
   <script src="menu.js"></script>
+  <script src="contact-form.js" type="text/javascript"></script>
 </body>
 </html>
