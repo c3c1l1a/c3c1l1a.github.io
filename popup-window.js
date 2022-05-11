@@ -142,9 +142,3 @@ function populateProjectsPopupModal(projectData){
 }
 
 
-/*modalCloseButton.addEventListener('click', () => {
-  console.log("close modal");
-  //modal.style.display = 'none';
-}
-);*/
-
