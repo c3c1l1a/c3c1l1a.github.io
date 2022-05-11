@@ -1,4 +1,4 @@
-let projects = {
+let projectsData = {
 	'project-1': {
 		image: "images/project_ing_placeholder_1.jpg",
 		name: "Project 1",
@@ -49,67 +49,38 @@ let projects = {
 	},
 }
 
-const portfolio = document.querySelector('#portfolio');
 
-for (const [id, project] of Object.entries(projects)){
-	const singleProjectCard = document.createElement('article');
-	singleProjectCard.className = "single-project-card card-1";
+// Dynamically create the projects card
+function createProjectsCard(){
+	if ('content' in document.createElement('template')){
+		let template = document.querySelector("#js-project-card");
+		for (const [id, projectItem] of Object.entries(projectsData)){
+			let projectCard = template.content.firstElementChild.cloneNode(true);
+			
+			let h3 = projectCard.querySelector(".js-project-card__name");
+			h3.textContent = projectItem.name;
 
-	const projectImg = document.createElement('img');
-	projectImg.src = project.image;
-	projectImg.className = "project-card-image";
-	singleProjectCard.appendChild(projectImg);
+			let img = projectCard.querySelector(".js-project-card__image"); 
+			img.src = projectItem.image;
 
-	const projectCardDetails = document.createElement('div');
-	projectCardDetails.className = 'project-card-details';
 
-	const projectName = document.createElement('h3');
-	const projectNameText = document.createTextNode(project.name);
-	projectName.appendChild(projectNameText);
-	projectName.className = "project-card-title";
-	projectCardDetails.appendChild(projectName);
+			let li = projectCard.querySelectorAll(".js-project-card__technology");
+			for (let i = 0; i < li.length; i++) {
+				li[i].textContent = projectItem.technologies[i];
+			}
 
-	const technologies = document.createElement('ul');
-	for (const technology of project.technologies){
-		const technologyItem = document.createElement('li');
-		const technologiesDescription = document.createTextNode(technology);
-		technologyItem.appendChild(technologiesDescription);
-		technologies.appendChild(technologyItem);
+			let button = projectCard.querySelector(".js-project-card__button");
+			button.addEventListener('click', (event)=> {
+				populateProjectsPopupModal(projects[event.currentTarget.id]);
+			});
+
+			const projects = document.querySelector(".js-projects");
+			projects.appendChild(projectCard);
+		}
+
 	}
-	projectCardDetails.appendChild(technologies);
-
-	const projectCardMoreButton = document.createElement('a')
-	// projectCardMoreButton.href = projects[project].linkToLive;
-  projectCardMoreButton.id = id;
-	projectCardMoreButton.className = "project-card-more-button section-button";
-	projectCardDetails.appendChild(projectCardMoreButton);
-
-	const buttonDescription = document.createElement('span');
-	const buttonDescriptionText = document.createTextNode('See this project');
-	buttonDescription.appendChild(buttonDescriptionText);
-	projectCardMoreButton.appendChild(buttonDescription);
-
-	const buttonIcon = document.createElement('img');
-	buttonIcon.src = 'images/button-arrow-icon.svg';
-	projectCardMoreButton.appendChild(buttonIcon);
-
-	singleProjectCard.appendChild(projectCardDetails);
-	portfolio.appendChild(singleProjectCard);
 }
-
-//Logic for modal pop-up
-const seeProjectButton = document.querySelectorAll('.project-card-more-button');
-let body = document.querySelector("body");
-//const modal = document.querySelector('.project-details-modal');
-const modalCloseButton = document.querySelector('.project-details-modal .close');
-//show modal on click of see project button
-for (let i = 0; i < seeProjectButton.length; i++){
-  seeProjectButton[i].addEventListener('click', (event) => {
-  	const modal = populateProjectsPopupModal(projects[event.currentTarget.id]);
-    body.appendChild(modal);
-  }
-  );
-}
+createProjectsCard();
 
 
 // Dynamically populate the Projects Popup modal template
@@ -137,7 +108,9 @@ function populateProjectsPopupModal(projectData){
 		close.addEventListener('click', (event) => {
 			projectsPopModal.parentNode.removeChild(projectsPopModal);
 		});
-		return projectsPopModal;
+
+		let body = document.querySelector("body");
+		body.appendChild(projectsPopModal);
 	}
 }
 

@@ -45,7 +45,7 @@
       </article>
       <div class="CTA-decorative-img"></div>
     </div>
-    <section id="portfolio" class="project-cards">
+    <section id="portfolio" class="project-cards js-projects">
       <h2 class="project-cards-header section-header">Projects</h2>
       <!--<article tabindex=0 class="single-project-card card-1">
         <img class="project-card-image" src="images/project_ing_placeholder_1.jpg" alt="Project snapshot">
@@ -221,6 +221,26 @@
     </footer>
   </main>
 
+  <!-- Project card template -->
+  <template id="js-project-card">
+    <article tabindex=0 class="single-project-card card-1">
+      <img class="project-card-image js-project-card__image" src="" alt="Project snapshot">
+      <div class="project-card-details">
+        <h3 class="project-card-title js-project-card__name"></h3>
+        <ul class="project-tech-stack-tags ">
+          <li class="js-project-card__technology"></li>
+          <li class="js-project-card__technology"></li>
+          <li class="js-project-card__technology"></li>
+        </ul>
+        <a class="project-card-more-button section-button js-project-card__button" href="#">
+          <span>See this project</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.7423 10.6261L13.4834 5.36722L14.8976 3.953L22.5707 11.6261L14.8976 19.2992L13.4834 17.885L18.7422 12.6261H2L2 10.6261H18.7423Z" />
+          </svg>
+        </a>
+      </div>
+    </article>
+  </template>
 
   <!-- Projects Popup modal template -->
   <template id="js-projects-popupModal">
