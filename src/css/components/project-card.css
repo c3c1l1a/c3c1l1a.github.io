@@ -1,0 +1,75 @@
+.project-card {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   cursor: pointer;
+}
+
+.project-card__image {
+  width: 100%;
+  background: red;
+}
+
+.project-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px 20px 20px;
+  background: var(--primary-color);
+}
+
+.project-card__name {
+   font: var(--text-large) var(--primary-font-family);
+   font-weight: var(--font-regular);
+   color: #fff;
+   line-height: 80%;
+
+}
+
+.project-card__technologies {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.project-card__technologies >* {
+  display: inline-block;
+  padding: 5px 10px;
+  color: var(--dark-blue);
+  font: 10.33px "Poppins", serif;
+  background: var(--color-project-tech-stack-tag);
+}
+.project-card-title {
+  color: white;
+  font: 20px "Poppins", serif;
+  font-weight: lighter;
+}
+
+.project-card-more-button {
+  width: fit-content;
+  border: solid 2px white;
+}
+
+.project-card-more-button span {
+  font: 16px "Poppins", serif;
+}
+
+.project-card-more-button svg {
+  fill: #fff;
+}
+
+
+@media (min-width: 768px) {
+   .project-card:hover .project-card-details {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     width: 100%;
+     position: absolute;
+     bottom: 0;
+     z-index: 10;
+     padding: 5% 5%;
+     margin: 0;
+     background-color: var(--dark-blue);
+   }
+}

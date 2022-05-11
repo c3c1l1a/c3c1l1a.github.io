@@ -1,0 +1,29 @@
+/*
+  BORDER BOX RESET
+*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  /* Colors */
+  --primary-color: #1a2236;
+  --secondary-color: #98dede;
+
+  /* Font family */
+  --primary-font-family: "Poppins", serif;
+  --secondary-font-family
+
+  /* Text size */
+  --text-regular: 16px;
+  --text-large: 20px;
+
+  /* Font weight */
+  --font-regular: 300;
+}

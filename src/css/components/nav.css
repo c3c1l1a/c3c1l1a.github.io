@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 20px;
+  background: no-repeat url("images/decorative_bg_1.png");
+  background-size: contain;
+}
+
+.nav__desktop {
+  display: none;
+}
+
+.nav__mobile {
+  display: none;
+}
