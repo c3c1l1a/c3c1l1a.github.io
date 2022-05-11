@@ -1,5 +1,5 @@
-let projects = [
-	{
+let projects = {
+	'project-1': {
 		image: "images/project_ing_placeholder_1.jpg",
 		name: "Project 1",
 		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
@@ -7,56 +7,56 @@ let projects = [
 		linkToLive: "https://c3c1l1a.github.io",
 		linkToSource: "https://github.com/c3c1l1a/c3c1l1a.github.io"
 	},
-	{
+	'project-6': {
 		image: "images/project_ing_placeholder_6.jpg",
-		name: "Project 2",
-		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-		technologies: ["HTML/CSS", "Ruby on Rails", "Javascript" ],
-		linkToLive: "https://c3c1l1a.github.io",
-		linkToSource: "https://github.com/c3c1l1a/c3c1l1a.github.io"
-	},
-	{
-		image: "images/project_ing_placeholder_2.jpg",
-		name: "Project 3",
-		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-		technologies: ["HTML/CSS", "Ruby on Rails", "Javascript" ],
-		linkToLive: "https://c3c1l1a.github.io",
-		linkToSource: "https://github.com/c3c1l1a/c3c1l1a.github.io"
-	},
-	{
-		image: "images/project_ing_placeholder_5.jpg",
-		name: "Project 4",
-		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-		technologies: ["HTML/CSS", "Ruby on Rails", "Javascript" ],
-		linkToLive: "https://c3c1l1a.github.io",
-		linkToSource: "https://github.com/c3c1l1a/c3c1l1a.github.io"
-	},
-	{
-		image: "images/project_ing_placeholder_3.jpg",
-		name: "Project 5",
-		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-		technologies: ["HTML/CSS", "Ruby on Rails", "Javascript" ],
-		linkToLive: "https://c3c1l1a.github.io",
-		linkToSource: "https://github.com/c3c1l1a/c3c1l1a.github.io"
-	},
-	{
-		image: "images/project_ing_placeholder_4.jpg",
 		name: "Project 6",
 		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
 		technologies: ["HTML/CSS", "Ruby on Rails", "Javascript" ],
 		linkToLive: "https://c3c1l1a.github.io",
 		linkToSource: "https://github.com/c3c1l1a/c3c1l1a.github.io"
 	},
-]
+	'project-2': {
+		image: "images/project_ing_placeholder_2.jpg",
+		name: "Project 2",
+		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+		technologies: ["HTML/CSS", "Ruby on Rails", "Javascript" ],
+		linkToLive: "https://c3c1l1a.github.io",
+		linkToSource: "https://github.com/c3c1l1a/c3c1l1a.github.io"
+	},
+	'project-5': {
+		image: "images/project_ing_placeholder_5.jpg",
+		name: "Project 5",
+		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+		technologies: ["HTML/CSS", "Ruby on Rails", "Javascript" ],
+		linkToLive: "https://c3c1l1a.github.io",
+		linkToSource: "https://github.com/c3c1l1a/c3c1l1a.github.io"
+	},
+	'project-3': {
+		image: "images/project_ing_placeholder_3.jpg",
+		name: "Project 3",
+		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+		technologies: ["HTML/CSS", "Ruby on Rails", "Javascript" ],
+		linkToLive: "https://c3c1l1a.github.io",
+		linkToSource: "https://github.com/c3c1l1a/c3c1l1a.github.io"
+	},
+	'project-4': {
+		image: "images/project_ing_placeholder_4.jpg",
+		name: "Project 4",
+		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+		technologies: ["HTML/CSS", "Ruby on Rails", "Javascript" ],
+		linkToLive: "https://c3c1l1a.github.io",
+		linkToSource: "https://github.com/c3c1l1a/c3c1l1a.github.io"
+	},
+}
 
 const portfolio = document.querySelector('#portfolio');
 
-for (let project in projects){
+for (const [id, project] of Object.entries(projects)){
 	const singleProjectCard = document.createElement('article');
 	singleProjectCard.className = "single-project-card card-1";
 
 	const projectImg = document.createElement('img');
-	projectImg.src = projects[project].image;
+	projectImg.src = project.image;
 	projectImg.className = "project-card-image";
 	singleProjectCard.appendChild(projectImg);
 
@@ -64,15 +64,15 @@ for (let project in projects){
 	projectCardDetails.className = 'project-card-details';
 
 	const projectName = document.createElement('h3');
-	const projectNameText = document.createTextNode(projects[project].name);
+	const projectNameText = document.createTextNode(project.name);
 	projectName.appendChild(projectNameText);
 	projectName.className = "project-card-title";
 	projectCardDetails.appendChild(projectName);
 
 	const technologies = document.createElement('ul');
-	for (let technology in projects[project].technologies){
+	for (const technology of project.technologies){
 		const technologyItem = document.createElement('li');
-		const technologiesDescription = document.createTextNode(projects[project].technologies[technology]);
+		const technologiesDescription = document.createTextNode(technology);
 		technologyItem.appendChild(technologiesDescription);
 		technologies.appendChild(technologyItem);
 	}
@@ -80,7 +80,7 @@ for (let project in projects){
 
 	const projectCardMoreButton = document.createElement('a')
 	// projectCardMoreButton.href = projects[project].linkToLive;
-  projectCardMoreButton.id = projects[project].name;
+  projectCardMoreButton.id = id;
 	projectCardMoreButton.className = "project-card-more-button section-button";
 	projectCardDetails.appendChild(projectCardMoreButton);
 
@@ -104,7 +104,7 @@ const modalCloseButton = document.querySelector('.project-details-modal .close')
 //show modal on click of see project button
 for (let i = 0; i < seeProjectButton.length; i++){
   seeProjectButton[i].addEventListener('click', (event) => {
-    console.log(event.target.id);
+    console.log(projects[event.currentTarget.id]);
     modal.style.display = 'flex';
   }
   );
