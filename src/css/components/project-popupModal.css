@@ -23,6 +23,10 @@
 	align-self: flex-end;
 }
 
+.project-popupModal img {
+	box-shadow: 0 0 1px 0.1px var(--primary-color);
+}
+
 .project-popupModal > h3 {
 	margin-bottom:  20px;
 }
@@ -45,12 +49,18 @@
 	}
 
 	.project-popupModal {
+		gap: 50px;
 		position: relative;
 		margin: 0 auto;
 		padding: 60px;
 		width: 60%;
 		height: auto;
 		overflow: unset;
+	}
+
+	.project-popupModal > p {
+		width: 70%;
+		margin: 0 auto;
 	}
 }
 
