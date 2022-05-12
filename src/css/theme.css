@@ -1,7 +1,9 @@
 :root {
 	/* Text size */
+	--text-small: 10.3334px;
 	--text-medium: 18px;
 	--text-large: 20px;
+
 
 	/* Font family */
 	--primary-font-family: "Poppins", serif;

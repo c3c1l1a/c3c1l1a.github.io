@@ -1,17 +1,23 @@
 .project-popupModal {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 0;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	height: 100vh;
 	padding: 20px;
 	background: #fff;
 	gap: 20px;
+	overflow:  scroll;
 }
 
 .project-popupModal > img {
 	align-self: flex-end;
+}
+
+.project-popupModal > h3 {
+	margin-bottom:  20px;
 }
 
 .project-popupModal__technologies {
