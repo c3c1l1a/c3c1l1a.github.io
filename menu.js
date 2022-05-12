@@ -17,5 +17,3 @@ navItems.forEach((navItem) => {
     document.querySelector('.mobile-menu').style.display = 'none';
   });
 });
-
-
