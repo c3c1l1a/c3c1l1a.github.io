@@ -1,5 +1,12 @@
 .header--secondary {
-	font:  var(--text-large) var(--primary-font-family);
+	font-family: var(--primary-font-family);
+	font-size: var(--text-large);
 	color: var(--primary-color);
 	font-weight: var(--bold);
+}
+
+@media (min-width: 768px) {
+	.header--secondary {
+		font-size: var(--text-x-large);
+	}
 }

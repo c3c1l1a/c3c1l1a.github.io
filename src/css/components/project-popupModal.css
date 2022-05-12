@@ -44,10 +44,22 @@
 	flex: 1;
 }
 
-.project-popupModal__description {
+@media (min-width: 768px) {
+	.project-popupModal {
+		width: 80%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: bisque;
+		-ms-overflow-style: none;  /* IE and Edge */
+	  	scrollbar-width: none;  /* Firefox */
+	}
 
+	/* Hide scrollbar for Chrome, Safari and Opera */
+	.project-popupModal::-webkit-scrollbar {
+	    display: none;
+	}
 }
-
 
 
 
