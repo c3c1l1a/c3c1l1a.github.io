@@ -242,8 +242,10 @@
   <template id="js-projects-popupModal">
     <div class="project-popupModal__container">
       <div class="project-popupModal">
-        <img class="js-projects-popupModal__close" src="images/icons/ic_close.svg" alt="Close project modal">
-        <h3 class="header--secondary js-projects-popupModal__name"></h3>
+        <div class="project-popupModal__header">
+          <h3 class="header--secondary js-projects-popupModal__name"></h3>
+          <img class="js-projects-popupModal__close" src="images/icons/ic_close.svg" alt="Close project modal">
+        </div>
         <ul class="project-popupModal__technologies">
           <li class="technology--with-border js-projects-popupModal__technology"></li>
           <li class="technology--with-border js-projects-popupModal__technology"></li>
@@ -266,7 +268,7 @@
             See live
             <img src="images/icons/ic_see-live.svg" alt="See live project icon">
           </a>
-          <a href="" class="button--secondary">
+          <a href="" class="js-projects-popupModal__source button--secondary">
             See source 
             <img src="images/icons/ic_github.svg" alt="See source code project icon">
           </a>

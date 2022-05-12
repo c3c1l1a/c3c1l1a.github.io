@@ -3,6 +3,7 @@
 	font-size: var(--text-large);
 	color: var(--primary-color);
 	font-weight: var(--bold);
+	line-height: 80%;
 }
 
 @media (min-width: 768px) {

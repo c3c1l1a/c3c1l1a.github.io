@@ -19,6 +19,17 @@
     display: none;
 }
 
+.project-popupModal__header {
+	display: flex;
+	gap: 20px;
+	flex-direction: column-reverse;
+}
+
+.project-popupModal__header img {
+	align-self: flex-end;
+	width: 20px;
+}
+
 .project-popupModal > img {
 	align-self: flex-end;
 }
@@ -61,6 +72,15 @@
 		overflow: unset;
 	}
 
+	.project-popupModal__header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.project-popupModal__header img {
+		width: 32px;
+		align-self: center;
+	}
 	.project-popupModal > p {
 		width: 70%;
 		margin: 0 auto;

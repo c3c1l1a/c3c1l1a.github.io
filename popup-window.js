@@ -109,8 +109,11 @@ function populateProjectsPopupModal(projectData){
 			projectsPopModal.parentNode.removeChild(projectsPopModal);
 		});
 
-		/*let live = projectsPopModal.querySelector(".js-projects-popupModal__live");
-		live.href = projectData.linkToLive;*/
+		let live = projectsPopModal.querySelector(".js-projects-popupModal__live");
+		live.href = projectData.linkToLive;
+
+		let source = projectsPopModal.querySelector(".js-projects-popupModal__source");
+		source.href = projectData.linkToSource;
 
 		let body = document.querySelector("body");
 		body.appendChild(projectsPopModal);
