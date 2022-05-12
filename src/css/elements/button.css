@@ -8,3 +8,11 @@
 	text-decoration: none;
 	font: var(--text-medium) var(--primary-font-family);
 }
+
+@media (min-width: 768px) {
+	.button--secondary {
+		justify-content: space-between;
+		width: 268px;
+		padding: 10px 30px;
+	}	
+}

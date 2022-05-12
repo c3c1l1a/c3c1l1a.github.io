@@ -36,6 +36,12 @@
 	gap: 10px;
 }
 
+.projects-popupModal__buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
 @media (min-width: 768px) {
 	.project-popupModal__container {
 		position: absolute;
@@ -61,6 +67,13 @@
 	.project-popupModal > p {
 		width: 70%;
 		margin: 0 auto;
+	}
+
+	.projects-popupModal__buttons {
+		flex-direction: row;
+		gap: 30px;
+		width: 70%;
+		margin: auto;
 	}
 }
 
