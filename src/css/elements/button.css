@@ -9,6 +9,11 @@
 	font: var(--text-medium) var(--primary-font-family);
 }
 
+.button--secondary::hover {
+	background:  var(--primary-color);
+}
+
+
 @media (min-width: 768px) {
 	.button--secondary {
 		justify-content: space-between;
