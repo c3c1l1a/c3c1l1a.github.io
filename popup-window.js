@@ -90,7 +90,11 @@ function populateProjectsPopupModal(projectData) {
 function createProjectsCard() {
   if ('content' in document.createElement('template')) {
     const template = document.querySelector('#js-project-card');
-    for (const [id, projectItem] of Object.entries(projectsData)) {
+
+    Object.entries(projectsData).forEach((item) => {
+      const id = item[0];
+      const projectItem = item[1];
+
       const projectCard = template.content.firstElementChild.cloneNode(true);
       projectCard.className = `${projectCard.className} ${id}`;
 
@@ -112,7 +116,7 @@ function createProjectsCard() {
 
       const projects = document.querySelector('.js-projects');
       projects.appendChild(projectCard);
-    }
+    });
   }
 }
 createProjectsCard();
