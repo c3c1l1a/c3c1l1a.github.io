@@ -1,0 +1,49 @@
+.project-popupModal {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 20px;
+	background: #fff;
+	gap: 20px;
+}
+
+.project-popupModal > img {
+	align-self: flex-end;
+}
+
+.project-popupModal__technologies {
+	display: flex;
+	gap: 10px;
+}
+
+.project-popupModal__slider {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.project-popupModal__slider img {
+	max-width: 100%;
+}
+
+.project-popupModal__slider > div {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.project-popupModal__slider-thumbnails > img {
+	width: 25%;
+	flex: 1;
+}
+
+.project-popupModal__description {
+
+}
+
+
+
+
+
+

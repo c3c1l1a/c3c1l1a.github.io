@@ -1,0 +1,4 @@
+.technology--with-border {
+	border: solid 0.5px var(--primary-color);
+	padding: 6px 10px;
+}

@@ -1,0 +1,10 @@
+.button--secondary {
+	display: flex;
+	gap:  20px;
+	border:  1px solid var(--primary-color);
+	background: #fff;
+	padding: 10px 50px;
+	color: var(--primary-color);
+	text-decoration: none;
+	font: var(--text-medium) var(--primary-font-family);
+}

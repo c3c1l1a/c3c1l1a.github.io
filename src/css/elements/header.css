@@ -1,0 +1,5 @@
+.header--secondary {
+	font:  var(--text-large) var(--primary-font-family);
+	color: var(--primary-color);
+	font-weight: var(--bold);
+}
