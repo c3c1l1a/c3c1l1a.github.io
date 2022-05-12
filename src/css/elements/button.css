@@ -1,0 +1,26 @@
+.button--secondary {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid var(--primary-color);
+  background: #fff;
+  padding: 12px 20px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font: var(--text-medium) var(--primary-font-family);
+}
+
+.button--secondary:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.button--secondary:hover img {
+  filter: invert(1);
+}
+
+@media (min-width: 768px) {
+  .button--secondary {
+    justify-content: space-between;
+    width: 268px;
+  }
+}
