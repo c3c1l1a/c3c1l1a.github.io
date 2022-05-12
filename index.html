@@ -237,108 +237,37 @@
   </template>
 
   <!-- Projects Popup modal template -->
-  <div class="project-popupModal">
-    <img src="images/icons/ic_close.svg" alt="Close project modal">
-    <h3 class="header--secondary">Project name goes here</h3>
-    <ul class="project-popupModal__technologies">
-      <li class="technology--with-border">dummy</li>
-      <li class="technology--with-border">dummy</li>
-      <li class="technology--with-border">dummy</li>
-    </ul>
-    <div class="project-popupModal__slider">
-      <img class="project-popupModal__slider-featured" src="images/project_ing_placeholder_1.jpg" alt="Project snapshot slide image">
-      <div class="project-popupModal__slider-thumbnails">
-        <img src="images/project_ing_placeholder_1.jpg" alt="Project snapshot thumbnail">
-        <img src="images/project_ing_placeholder_1.jpg" alt="Project snapshot thumbnail">
-        <img src="images/project_ing_placeholder_1.jpg" alt="Project snapshot thumbnail">
-        <img src="images/project_ing_placeholder_1.jpg" alt="Project snapshot thumbnail">
-      </div>
-    </div>
-    <p class="project-popupModal__description paragraph--secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-
-Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
-  <a href="" class="button--secondary">
-    See live
-    <img src="images/icons/ic_see-live.svg" alt="See live project icon">
-  </a>
-  <a href="" class="button--secondary">
-    See source 
-    <img src="images/icons/ic_github.svg" alt="See source code project icon">
-  </a>
-
-  </div>
+  
   <template id="js-projects-popupModal">
-    <!--<div class="project-details-modal">
-      <div class="project-details-modal-content">
-        <div class="close js-projects-popupModal__close">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M10.1408 8.34814L1.79263 0L0 1.79263L8.34817 10.1408L0.281392 18.2075L2.07402 20.0001L10.1408 11.9334L17.9263 19.7189L19.719 17.9263L11.9334 10.1408L20.0004 2.07389L18.2077 0.28126L10.1408 8.34814Z"
-              fill="#1A2236" />
-          </svg>
-        </div>
-        <h3 class="project-card-title js-projects-popupModal__name" ></h3>
-        <ul class="project-tech-stack-tags ">
-          <li class="js-projects-popupModal__technology"></li>
-          <li class="js-projects-popupModal__technology"></li>
-          <li class="js-projects-popupModal__technology"></li>
-        </ul>
-        <div class="project-slider ">
-          <img class="project-card-image js-projects-popupModal__image" src="" alt="Project featured image" />
-        </div>
-        <div class="thumbnails">
-          <div>
-            <img class="js-projects-popupModal__image" src="" alt="Homepage thumbnail" />
-          </div>
-          <div>
-            <img class="js-projects-popupModal__image" src="" alt="About page thumbnail" />
-          </div>
-          <div>
-            <img class="js-projects-popupModal__image" src="images/project_ing_placeholder_4.jpg" alt="Services page thumbnail" />
-          </div>
-          <div>
-            <img class="js-projects-popupModal__image" src="" alt="Contact page thumbnail" />
-          </div>
-        </div>
-        <div class="project-description">
-          <p class="section-summery js-projects-popupModal__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="project-links">
-          <a class="section-button" href="#">
-            <span>See live</span>
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M12.6002 1.73246H19.0425L8.78761 11.9874L10.0126 13.2124L20.2675 2.95755V9.39982H22V0.866231V0H21.1338H12.6002V1.73246ZM0.866231 3.19972H5.1333V4.93219H1.73246V20.2669H17.0672V16.8666H18.7996V21.1331V21.9994H17.9334H0.866231H0V21.1331V4.06596V3.19972H0.866231Z"
-                fill="#1A2236" />
-            </svg>
-
-          </a>
-          <a class="section-button" href="#">
-            <span>See source</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_70_518)">
-                <path
-                  d="M12 0.5C5.37 0.5 0 5.78 0 12.292C0 17.503 3.438 21.922 8.205 23.48C8.805 23.591 9.025 23.226 9.025 22.913C9.025 22.633 9.015 21.891 9.01 20.908C5.672 21.619 4.968 19.326 4.968 19.326C4.422 17.965 3.633 17.601 3.633 17.601C2.546 16.87 3.717 16.885 3.717 16.885C4.922 16.967 5.555 18.1 5.555 18.1C6.625 19.903 8.364 19.382 9.05 19.081C9.158 18.318 9.467 17.799 9.81 17.504C7.145 17.209 4.344 16.195 4.344 11.677C4.344 10.39 4.809 9.338 5.579 8.513C5.444 8.215 5.039 7.016 5.684 5.392C5.684 5.392 6.689 5.076 8.984 6.601C9.944 6.339 10.964 6.209 11.984 6.203C13.004 6.209 14.024 6.339 14.984 6.601C17.264 5.076 18.269 5.392 18.269 5.392C18.914 7.016 18.509 8.215 18.389 8.513C19.154 9.338 19.619 10.39 19.619 11.677C19.619 16.207 16.814 17.204 14.144 17.494C14.564 17.848 14.954 18.571 14.954 19.676C14.954 21.254 14.939 22.522 14.939 22.905C14.939 23.214 15.149 23.583 15.764 23.465C20.565 21.917 24 17.495 24 12.292C24 5.78 18.627 0.5 12 0.5Z"
-                  fill="#1A2236" />
-              </g>
-              <defs>
-                <clipPath id="clip0_70_518">
-                  <rect width="24" height="24" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-
-          </a>
+    <div class="project-popupModal">
+      <img class="js-projects-popupModal__close" src="images/icons/ic_close.svg" alt="Close project modal">
+      <h3 class="header--secondary js-projects-popupModal__name"></h3>
+      <ul class="project-popupModal__technologies">
+        <li class="technology--with-border js-projects-popupModal__technology"></li>
+        <li class="technology--with-border js-projects-popupModal__technology"></li>
+        <li class="technology--with-border js-projects-popupModal__technology"></li>
+      </ul>
+      <div class="project-popupModal__slider">
+        <img class="project-popupModal__slider-featured js-projects-popupModal__image" src="images/project_ing_placeholder_1.jpg" alt="Project snapshot slide image">
+        <div class="project-popupModal__slider-thumbnails">
+          <img class="js-projects-popupModal__image" src="" alt="Project snapshot thumbnail">
+          <img class="js-projects-popupModal__image" src="" alt="Project snapshot thumbnail">
+          <img class="js-projects-popupModal__image" src="" alt="Project snapshot thumbnail">
+          <img class="js-projects-popupModal__image" src="" alt="Project snapshot thumbnail">
         </div>
       </div>
-    </div> -->
-
-
+      <p class="paragraph--secondary js-projects-popupModal__description">
+        
+      </p>
+      <a href="" class="button--secondary">
+        See live
+        <img src="images/icons/ic_see-live.svg" alt="See live project icon">
+      </a>
+      <a href="" class="button--secondary">
+        See source 
+        <img src="images/icons/ic_github.svg" alt="See source code project icon">
+      </a>
+    </div>
   </template>
   
 
