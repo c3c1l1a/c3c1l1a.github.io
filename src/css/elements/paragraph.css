@@ -1,5 +1,5 @@
 .paragraph--secondary {
-	font: var(--text-medium) var(--primary-font-family);
-	font-weight: var(--normal);
-	color:  var(--primary-color);
+  font: var(--text-medium) var(--primary-font-family);
+  font-weight: var(--normal);
+  color: var(--primary-color);
 }

@@ -1,13 +1,13 @@
 .header--secondary {
-	font-family: var(--primary-font-family);
-	font-size: var(--text-large);
-	color: var(--primary-color);
-	font-weight: var(--bold);
-	line-height: 80%;
+  font-family: var(--primary-font-family);
+  font-size: var(--text-large);
+  color: var(--primary-color);
+  font-weight: var(--bold);
+  line-height: 80%;
 }
 
 @media (min-width: 768px) {
-	.header--secondary {
-		font-size: var(--text-x-large);
-	}
+  .header--secondary {
+    font-size: var(--text-x-large);
+  }
 }
