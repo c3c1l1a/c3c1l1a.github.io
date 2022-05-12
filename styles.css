@@ -299,13 +299,6 @@ html {
   border: none;
 }
 
-.contact-form .contact-form__error--emailCase {
-  display: none;
-  background-color: #d24343;
-  border: 1px solid #bc2a2a;
-  color: #fff;
-}
-
 .footer {
   display: flex;
   flex-direction: column;
