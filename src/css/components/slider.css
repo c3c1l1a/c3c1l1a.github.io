@@ -6,6 +6,7 @@
 }
 .slider img {
 	max-width: 100%;
+	box-shadow: 0 0 1px 0.1px var(--primary-color);
 }
 
 .slider > div {

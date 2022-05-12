@@ -23,9 +23,6 @@
 	align-self: flex-end;
 }
 
-.project-popupModal img {
-	box-shadow: 0 0 1px 0.1px var(--primary-color);
-}
 
 .project-popupModal > h3 {
 	margin-bottom:  20px;
