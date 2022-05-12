@@ -32,25 +32,6 @@
 	gap: 10px;
 }
 
-.project-popupModal__slider {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-}
-.project-popupModal__slider img {
-	max-width: 100%;
-}
-
-.project-popupModal__slider > div {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.project-popupModal__slider-thumbnails > img {
-	width: 25%;
-	flex: 1;
-}
-
 @media (min-width: 768px) {
 	.project-popupModal__container {
 		position: absolute;
@@ -58,7 +39,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: red;
+		background: var(--primary-color);
 		overflow: scroll;
 		padding: 1% 0;
 	}
@@ -66,9 +47,9 @@
 	.project-popupModal {
 		position: relative;
 		margin: 0 auto;
-		width: 50%;
+		padding: 60px;
+		width: 60%;
 		height: auto;
-		background: bisque;
 		overflow: unset;
 	}
 }

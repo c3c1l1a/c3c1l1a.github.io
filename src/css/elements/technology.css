@@ -1,7 +1,13 @@
 .technology--with-border {
 	border: solid 0.5px var(--primary-color);
 	padding: 6px 10px;
-	font: var(--text-small) var(--primary-font-family);
+	font-size: var(--text-small);
+	font-family: var(--primary-font-family);
 	color: var(--primary-color);
 }
 
+@media (min-width: 768px) {
+	.technology--with-border {
+		font-size: var(--text-large);
+	}
+}

@@ -1,0 +1,24 @@
+.slider {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 1px;
+}
+.slider img {
+	max-width: 100%;
+}
+
+.slider > div {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.slider-thumbnails > img {
+	width: 25%;
+	flex: 1;
+}
+
+.slider-thumbnails :first-child {
+	border: solid 1px var(--primary-color);
+	border-radius: 2px;
+}
