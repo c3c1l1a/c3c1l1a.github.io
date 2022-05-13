@@ -53,7 +53,7 @@ const projectsData = {
 function populateProjectsPopupModal(projectData) {
   if ('content' in document.createElement('template')) {
     const template = document.querySelector('#js-projects-popupModal');
-    const projectsPopModal = template.content.firstElementChild.cloneNode(true);
+    const projectsPopModal = template.content.cloneNode(true);
 
     const h3 = projectsPopModal.querySelector('.js-projects-popupModal__name');
     h3.textContent = projectData.name;

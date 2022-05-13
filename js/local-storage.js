@@ -35,7 +35,7 @@ function checkFormObject() {
     document.querySelector('.js-contact-form__name').value = formObject.name;
     document.querySelector('.js-contact-form__email').value = formObject.email;
     document.querySelector('.js-contact-form__message').value = formObject.message;
-  }
+  } 
 }
 
 window.onload = () => {
