@@ -15,12 +15,12 @@
 <link rel="stylesheet" type="text/css" href="src/css/elements/technology.css">
 <link rel="stylesheet" type="text/css" href="src/css/elements/paragraph.css">
 <link rel="stylesheet" type="text/css" href="src/css/elements/button.css">
+<link rel="stylesheet" type="text/css" href="input-error.css">
 
 <!-- CSS theme -->
 <link rel="stylesheet" type="text/css" href="src/css/theme.css">
 <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
 <title>Cecilia Mukima</title>
-
 <body>
   <header>
     <nav class="nav">
@@ -117,18 +117,18 @@
       <h2 class="form-section-header section-header">Get started</h2>
       <p class="section-summery">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna.</p>
-      <form class="contact-form" autocomplete="off" action="https://formspree.io/f/mbjwpovv" method="post">
+      <form class="contact-form js-contact-form" autocomplete="off" action="https://formspree.io/f/mbjwpovv" method="post">
         <label for="name">
           Your name
           <input id="name" class="form-field" type="text" name="name" maxlength="30" placeholder="Your name" required>
         </label>
         <label for="email">
           Your email
-          <input id="email" class="form-field" type="email" name="email" placeholder="Your email" required>
+          <input id="email" class="form-field js-contact-form__email" type="email" name="email" placeholder="Your email" required>
         </label>
-        <textarea class="form-field" name="message" placeholder="Enter your message here.." maxlength="500"
-          required></textarea>
-        <button class="form-button section-button" type="submit">
+        <textarea class="form-field" name="message" placeholder="Enter your message here.." maxlength="500" required></textarea>
+        <P class="input-error js-input-error__email">* Your email needs to be in lower case</P>
+        <button class="form-button section-button " type="submit">
           Start Collaboration
         </button>
       </form>
@@ -276,12 +276,8 @@
       </div>
     </div>
   </template>
-  
-
-
   <script src="menu.js"></script>
+  <script src="contact-form.js" type="text/javascript"></script>
   <script src="popup-window.js"></script>
-
 </body>
-
 </html>
