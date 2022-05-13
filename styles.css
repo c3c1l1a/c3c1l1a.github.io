@@ -32,7 +32,7 @@ html {
 
 .mobile-menu {
   position: fixed;
-  display: flex;
+  display: none;
   flex-direction: column;
   top: 0;
   left: 0;
@@ -317,6 +317,66 @@ html {
   width: fit-content;
   color: #92dcdc;
   padding: 0;
+}
+
+/* Mobile Modal */
+.project-details-modal {
+  display: flex;
+  flex-direction: column;
+  padding: 20.25px;
+  gap: 23px;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+}
+
+.project-details-modal .close {
+  text-align: right;
+}
+
+.project-details-modal .project-card-title {
+  color: #1a2236;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 80%;
+  font-family: "Poppins", serif;
+}
+
+.project-details-modal .project-tech-stack-tags > li {
+  background-color: #fff;
+  border: 0.52px solid #1a2236;
+}
+
+.project-details-modal .thumbnails {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.project-details-modal .thumbnails > div {
+  flex: 1 1 90px;
+}
+
+.project-details-modal .thumbnails > div img {
+  width: 100%;
+}
+
+.project-details-modal .project-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 29px;
+}
+
+.project-details-modal .section-button {
+  border: 1px solid #1a2236;
+  background-color: #fff;
+  color: #1a2236;
+  width: 80%;
+}
+
+.project-details-modal .section-button svg {
+  fill: #1a2236;
 }
 
 @media (min-width: 768px) {
