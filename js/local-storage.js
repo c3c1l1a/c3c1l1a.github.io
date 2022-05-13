@@ -39,6 +39,5 @@ function checkFormObject() {
 }
 
 window.onload = () => {
-  checkFormObject();  
-}
-
+  checkFormObject();
+};
