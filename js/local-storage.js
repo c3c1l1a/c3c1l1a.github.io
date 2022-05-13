@@ -37,4 +37,8 @@ function checkFormObject() {
     document.querySelector('.js-contact-form__message').value = formObject.message;
   }
 }
-checkFormObject();
+
+window.onload = () => {
+  checkFormObject();  
+}
+
